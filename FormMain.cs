@@ -82,5 +82,19 @@ namespace 中医信息管理系统
             FormZhenDuan zd = new FormZhenDuan();
             zd.Show();
         }
+
+        private void 求诊信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPatient qz = new FrmPatient();
+            qz.MdiParent = this;
+            qz.WindowState = FormWindowState.Maximized;
+            qz.Show();
+        }
+
+        private void 基本信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDoctor ys = new FormDoctor();
+            ys.Show();
+        }
     }
 }

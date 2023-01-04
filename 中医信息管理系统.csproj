@@ -110,6 +110,12 @@
   <ItemGroup>
     <Compile Include="entity\FolkPrescription.cs" />
     <Compile Include="entity\JingMai.cs" />
+    <Compile Include="FormDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoctor.Designer.cs">
+      <DependentUpon>FormDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormZhenDuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,18 @@
     </Compile>
     <Compile Include="FrmFangji.Designer.cs">
       <DependentUpon>FrmFangji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatient.Designer.cs">
+      <DependentUpon>FrmPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UControls\UPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControls\UPager.Designer.cs">
+      <DependentUpon>UPager.cs</DependentUpon>
     </Compile>
     <Compile Include="中医古籍\FormMP4Player.cs">
       <SubType>Form</SubType>
@@ -195,6 +213,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDoctor.resx">
+      <DependentUpon>FormDoctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormZhenDuan.resx">
       <DependentUpon>FormZhenDuan.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFangji.resx">
       <DependentUpon>FrmFangji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatient.resx">
+      <DependentUpon>FrmPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UControls\UPager.resx">
+      <DependentUpon>UPager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="中医古籍\FormMP4Player.resx">
       <DependentUpon>FormMP4Player.cs</DependentUpon>

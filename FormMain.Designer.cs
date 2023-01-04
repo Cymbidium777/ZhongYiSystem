@@ -77,12 +77,14 @@ namespace 中医信息管理系统
             this.基本信息ToolStripMenuItem.Name = "基本信息ToolStripMenuItem";
             this.基本信息ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.基本信息ToolStripMenuItem.Text = "医生信息";
+            this.基本信息ToolStripMenuItem.Click += new System.EventHandler(this.基本信息ToolStripMenuItem_Click);
             // 
             // 求诊信息ToolStripMenuItem
             // 
             this.求诊信息ToolStripMenuItem.Name = "求诊信息ToolStripMenuItem";
             this.求诊信息ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.求诊信息ToolStripMenuItem.Text = "求诊信息";
+            this.求诊信息ToolStripMenuItem.Click += new System.EventHandler(this.求诊信息ToolStripMenuItem_Click);
             // 
             // 中医诊断ToolStripMenuItem
             // 

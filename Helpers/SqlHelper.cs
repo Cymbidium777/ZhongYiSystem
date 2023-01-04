@@ -60,6 +60,30 @@ namespace GMS
             return dt;
         }
 
+        //-------------------------------------------返回多个结果集，存储过程
+        public static DataSet GetDataSet(string sql, params MySqlParameter[] paras)
+        {
+            DataSet ds = new DataSet();
+            using (MySqlConnection conn = new MySqlConnection(connString))
+            {
+                //创建Command对象(MySqlCommand用来执行数据库操作命令)
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (paras != null)
+                {
+                    //添加参数
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddRange(paras);
+                }
+                conn.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                adapter.SelectCommand = cmd;
+                //数据填充
+                adapter.Fill(ds);
+            }
+            return ds;
+        }
+
         //------------------------------------------------增删改
         public static int ExecuteNonQuery(string sql, params MySqlParameter[] paras)
         {
