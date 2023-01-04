@@ -181,7 +181,7 @@ namespace 中医信息管理系统
             }
             else
             {
-                MessageBox.Show("输入医生编号后查看");
+                MessageBox.Show("输入医生编号获取查看权限");
             }
         }
 
@@ -250,6 +250,40 @@ namespace 中医信息管理系统
             else
             {
                 MessageBox.Show("您无权限修改历史诊断信息，如需修改请联系管理员");
+            }
+        }
+
+        private void 删除记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lviRecord.Items.IndexOf(lviRecord.FocusedItem) != -1)
+            {
+                if (txtDoctorID.Text != "")
+                {
+                    if (JudgeDoctorID(txtDoctorID.Text))
+                    {
+                        int index = int.Parse(dt2.Rows[lviRecord.Items.IndexOf(lviRecord.FocusedItem)]["诊断编号"].ToString());
+                        string sql = "DELETE FROM `诊断信息` WHERE `诊断编号`=" + index + "";
+                        int count = SqlHelper.ExecuteNonQuery(sql);
+                        if (count > 0)
+                        {
+                            MessageBox.Show("删除成功！");
+                            ClearRTB();
+                            SearchUser(txtUserID.Text);
+                        }
+                        else
+                        {
+                            MessageBox.Show("删除失败！");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("医生编号有误，请检查");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("输入医生编号获取删除权限");
+                }
             }
         }
     }
