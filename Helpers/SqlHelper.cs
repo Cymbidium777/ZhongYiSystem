@@ -2,6 +2,8 @@
 using System;
 using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace GMS
 {
@@ -33,8 +35,6 @@ namespace GMS
             }
             return o;
         }
-
-
 
         //------------------------------------------查
         public static DataTable GetDataTable(string sql, params MySqlParameter[] paras)
@@ -104,7 +104,6 @@ namespace GMS
             return count;
         }
 
-
         //------------------------------修改操作传值
         public static MySqlDataReader ExecuteReader(string sql, params MySqlParameter[] paras)
         {
@@ -129,6 +128,31 @@ namespace GMS
                 conn.Close();
                 throw new Exception("执行查询出现异常", ex);
             }
+        }
+
+        //------------------------------测试连接
+        public static bool ConnectTest()
+        {
+            bool result = false;
+            //创建连接对象
+            MySqlConnection conn = new MySqlConnection(connString);
+            try
+            {
+                conn.Open();
+                if (conn.State == ConnectionState.Open)
+                {
+                    result = true;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("数据库连接失败，请检查网络连接后重试！");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return result;
         }
     }
 }

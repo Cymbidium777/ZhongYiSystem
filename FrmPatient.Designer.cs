@@ -54,6 +54,8 @@ namespace 中医信息管理系统
             this.txtPlace = new System.Windows.Forms.TextBox();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.label6 = new System.Windows.Forms.Label();
+            this.rbtFemale = new System.Windows.Forms.RadioButton();
+            this.rbtMale = new System.Windows.Forms.RadioButton();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAge = new System.Windows.Forms.TextBox();
@@ -71,8 +73,6 @@ namespace 中医信息管理系统
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmDel = new System.Windows.Forms.ToolStripMenuItem();
             this.uPager1 = new WinformPager.UControls.UPager();
-            this.rbtMale = new System.Windows.Forms.RadioButton();
-            this.rbtFemale = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -133,6 +133,7 @@ namespace 中医信息管理系统
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
@@ -482,6 +483,30 @@ namespace 中医信息管理系统
             this.label6.Text = "性别：";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // rbtFemale
+            // 
+            this.rbtFemale.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtFemale.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtFemale.Location = new System.Drawing.Point(62, 0);
+            this.rbtFemale.Name = "rbtFemale";
+            this.rbtFemale.Size = new System.Drawing.Size(62, 30);
+            this.rbtFemale.TabIndex = 1;
+            this.rbtFemale.TabStop = true;
+            this.rbtFemale.Text = "女";
+            this.rbtFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbtMale
+            // 
+            this.rbtMale.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rbtMale.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtMale.Location = new System.Drawing.Point(0, 0);
+            this.rbtMale.Name = "rbtMale";
+            this.rbtMale.Size = new System.Drawing.Size(62, 30);
+            this.rbtMale.TabIndex = 0;
+            this.rbtMale.TabStop = true;
+            this.rbtMale.Text = "男";
+            this.rbtMale.UseVisualStyleBackColor = true;
+            // 
             // splitContainer5
             // 
             this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -649,6 +674,7 @@ namespace 中医信息管理系统
             // splitContainer14
             // 
             this.splitContainer14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer14.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer14.Location = new System.Drawing.Point(0, 0);
             this.splitContainer14.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer14.Name = "splitContainer14";
@@ -698,9 +724,9 @@ namespace 中医信息管理系统
             // 
             // uPager1
             // 
+            this.uPager1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.uPager1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.uPager1.CurrentPage = 1;
-            this.uPager1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uPager1.Location = new System.Drawing.Point(0, 0);
             this.uPager1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uPager1.Name = "uPager1";
@@ -709,30 +735,6 @@ namespace 中医信息管理系统
             this.uPager1.StartIndex = 1;
             this.uPager1.TabIndex = 0;
             this.uPager1.TotalCount = 0;
-            // 
-            // rbtMale
-            // 
-            this.rbtMale.Dock = System.Windows.Forms.DockStyle.Left;
-            this.rbtMale.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rbtMale.Location = new System.Drawing.Point(0, 0);
-            this.rbtMale.Name = "rbtMale";
-            this.rbtMale.Size = new System.Drawing.Size(62, 30);
-            this.rbtMale.TabIndex = 0;
-            this.rbtMale.TabStop = true;
-            this.rbtMale.Text = "男";
-            this.rbtMale.UseVisualStyleBackColor = true;
-            // 
-            // rbtFemale
-            // 
-            this.rbtFemale.Dock = System.Windows.Forms.DockStyle.Left;
-            this.rbtFemale.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rbtFemale.Location = new System.Drawing.Point(62, 0);
-            this.rbtFemale.Name = "rbtFemale";
-            this.rbtFemale.Size = new System.Drawing.Size(62, 30);
-            this.rbtFemale.TabIndex = 1;
-            this.rbtFemale.TabStop = true;
-            this.rbtFemale.Text = "女";
-            this.rbtFemale.UseVisualStyleBackColor = true;
             // 
             // FrmPatient
             // 
