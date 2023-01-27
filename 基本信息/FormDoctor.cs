@@ -14,6 +14,7 @@ namespace 中医信息管理系统
 {
     public partial class FormDoctor : Form
     {
+        int totalCount;
         public FormDoctor()
         {
             InitializeComponent();
@@ -238,7 +239,7 @@ namespace 中医信息管理系统
                 new MySqlParameter("endIndex",endIndex)
             };
             DataSet ds = SqlHelper.GetDataSet("FindDoctorListByPage", paras);
-            int totalCount = int.Parse(ds.Tables[0].Rows[0][0].ToString());//总记录数
+            totalCount = int.Parse(ds.Tables[0].Rows[0][0].ToString());//总记录数
             DataTable dt = ds.Tables[1];//数据列表
             dgvDoctorInfo.DataSource = dt;
             uPager1.TotalCount = totalCount;
@@ -285,8 +286,11 @@ namespace 中医信息管理系统
         {
             if (e.Button == MouseButtons.Right)
             {
-                if (e.RowIndex > -1)
-                    tsmDel.Visible = true;
+                tsmDel.Visible = true;
+                if (e.RowIndex >= totalCount)
+                {
+                    tsmDel.Visible = false;
+                }
             }
         }
 

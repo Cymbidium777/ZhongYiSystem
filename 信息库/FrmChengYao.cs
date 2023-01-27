@@ -84,7 +84,6 @@ namespace 中医信息管理系统
             trvSearch.Visible = false;
             DisplayTr();
             BindDgv();
-            //trvChengyao.ExpandAll();
         }
         /// <summary>
         /// 模糊查询功能方法

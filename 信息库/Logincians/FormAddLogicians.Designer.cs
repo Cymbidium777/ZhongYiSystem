@@ -170,7 +170,7 @@ namespace 中医信息管理系统.Logincians
             // 
             this.splitContainer12.Panel2.Controls.Add(this.splitContainer10);
             this.splitContainer12.Size = new System.Drawing.Size(116, 122);
-            this.splitContainer12.SplitterDistance = 26;
+            this.splitContainer12.SplitterDistance = 29;
             this.splitContainer12.TabIndex = 0;
             // 
             // label7
@@ -181,7 +181,7 @@ namespace 中医信息管理系统.Logincians
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 26);
+            this.label7.Size = new System.Drawing.Size(116, 29);
             this.label7.TabIndex = 2;
             this.label7.Text = "朝代";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -201,8 +201,8 @@ namespace 中医信息管理系统.Logincians
             // splitContainer10.Panel2
             // 
             this.splitContainer10.Panel2.Controls.Add(this.rtbName);
-            this.splitContainer10.Size = new System.Drawing.Size(116, 92);
-            this.splitContainer10.SplitterDistance = 48;
+            this.splitContainer10.Size = new System.Drawing.Size(116, 89);
+            this.splitContainer10.SplitterDistance = 51;
             this.splitContainer10.TabIndex = 0;
             // 
             // rtbDynasty
@@ -212,7 +212,7 @@ namespace 中医信息管理系统.Logincians
             this.rtbDynasty.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold);
             this.rtbDynasty.Location = new System.Drawing.Point(0, 0);
             this.rtbDynasty.Name = "rtbDynasty";
-            this.rtbDynasty.Size = new System.Drawing.Size(116, 48);
+            this.rtbDynasty.Size = new System.Drawing.Size(116, 51);
             this.rtbDynasty.TabIndex = 0;
             this.rtbDynasty.Text = "";
             // 
@@ -223,7 +223,7 @@ namespace 中医信息管理系统.Logincians
             this.rtbName.Font = new System.Drawing.Font("楷体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtbName.Location = new System.Drawing.Point(0, 0);
             this.rtbName.Name = "rtbName";
-            this.rtbName.Size = new System.Drawing.Size(116, 40);
+            this.rtbName.Size = new System.Drawing.Size(116, 34);
             this.rtbName.TabIndex = 1;
             this.rtbName.Text = "";
             // 
@@ -234,7 +234,7 @@ namespace 中医信息管理系统.Logincians
             this.livAddLogicians.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.name});
             this.livAddLogicians.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.livAddLogicians.Font = new System.Drawing.Font("楷体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.livAddLogicians.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.livAddLogicians.FullRowSelect = true;
             this.livAddLogicians.HideSelection = false;
             this.livAddLogicians.Location = new System.Drawing.Point(0, 0);
@@ -279,7 +279,7 @@ namespace 中医信息管理系统.Logincians
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer2.Size = new System.Drawing.Size(680, 450);
-            this.splitContainer2.SplitterDistance = 400;
+            this.splitContainer2.SplitterDistance = 421;
             this.splitContainer2.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -298,13 +298,13 @@ namespace 中医信息管理系统.Logincians
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.75F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(680, 400);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(680, 421);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // splitContainer9
             // 
             this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer9.Location = new System.Drawing.Point(330, 86);
+            this.splitContainer9.Location = new System.Drawing.Point(330, 90);
             this.splitContainer9.Name = "splitContainer9";
             this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -315,8 +315,8 @@ namespace 中医信息管理系统.Logincians
             // splitContainer9.Panel2
             // 
             this.splitContainer9.Panel2.Controls.Add(this.rtbLife);
-            this.splitContainer9.Size = new System.Drawing.Size(347, 311);
-            this.splitContainer9.SplitterDistance = 39;
+            this.splitContainer9.Size = new System.Drawing.Size(347, 328);
+            this.splitContainer9.SplitterDistance = 25;
             this.splitContainer9.TabIndex = 3;
             // 
             // label4
@@ -327,7 +327,7 @@ namespace 中医信息管理系统.Logincians
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(347, 39);
+            this.label4.Size = new System.Drawing.Size(347, 25);
             this.label4.TabIndex = 1;
             this.label4.Text = "生平";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,14 +339,14 @@ namespace 中医信息管理系统.Logincians
             this.rtbLife.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtbLife.Location = new System.Drawing.Point(0, 0);
             this.rtbLife.Name = "rtbLife";
-            this.rtbLife.Size = new System.Drawing.Size(347, 268);
+            this.rtbLife.Size = new System.Drawing.Size(347, 299);
             this.rtbLife.TabIndex = 1;
             this.rtbLife.Text = "";
             // 
             // splitContainer8
             // 
             this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.Location = new System.Drawing.Point(3, 86);
+            this.splitContainer8.Location = new System.Drawing.Point(3, 90);
             this.splitContainer8.Name = "splitContainer8";
             this.splitContainer8.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -357,8 +357,8 @@ namespace 中医信息管理系统.Logincians
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.rtbEvaluate);
-            this.splitContainer8.Size = new System.Drawing.Size(321, 311);
-            this.splitContainer8.SplitterDistance = 37;
+            this.splitContainer8.Size = new System.Drawing.Size(321, 328);
+            this.splitContainer8.SplitterDistance = 25;
             this.splitContainer8.TabIndex = 2;
             // 
             // label3
@@ -369,7 +369,7 @@ namespace 中医信息管理系统.Logincians
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(321, 37);
+            this.label3.Size = new System.Drawing.Size(321, 25);
             this.label3.TabIndex = 1;
             this.label3.Text = "人物评价";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,7 +381,7 @@ namespace 中医信息管理系统.Logincians
             this.rtbEvaluate.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rtbEvaluate.Location = new System.Drawing.Point(0, 0);
             this.rtbEvaluate.Name = "rtbEvaluate";
-            this.rtbEvaluate.Size = new System.Drawing.Size(321, 270);
+            this.rtbEvaluate.Size = new System.Drawing.Size(321, 299);
             this.rtbEvaluate.TabIndex = 0;
             this.rtbEvaluate.Text = "";
             // 
@@ -399,8 +399,8 @@ namespace 中医信息管理系统.Logincians
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.rtbAchievement);
-            this.splitContainer7.Size = new System.Drawing.Size(347, 77);
-            this.splitContainer7.SplitterDistance = 25;
+            this.splitContainer7.Size = new System.Drawing.Size(347, 81);
+            this.splitContainer7.SplitterDistance = 26;
             this.splitContainer7.TabIndex = 1;
             // 
             // label2
@@ -411,7 +411,7 @@ namespace 中医信息管理系统.Logincians
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(347, 25);
+            this.label2.Size = new System.Drawing.Size(347, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "成就";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -423,7 +423,7 @@ namespace 中医信息管理系统.Logincians
             this.rtbAchievement.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold);
             this.rtbAchievement.Location = new System.Drawing.Point(0, 0);
             this.rtbAchievement.Name = "rtbAchievement";
-            this.rtbAchievement.Size = new System.Drawing.Size(347, 48);
+            this.rtbAchievement.Size = new System.Drawing.Size(347, 51);
             this.rtbAchievement.TabIndex = 1;
             this.rtbAchievement.Text = "";
             // 
@@ -441,8 +441,8 @@ namespace 中医信息管理系统.Logincians
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.rtbWork);
-            this.splitContainer6.Size = new System.Drawing.Size(321, 77);
-            this.splitContainer6.SplitterDistance = 25;
+            this.splitContainer6.Size = new System.Drawing.Size(321, 81);
+            this.splitContainer6.SplitterDistance = 26;
             this.splitContainer6.TabIndex = 0;
             // 
             // label1
@@ -453,7 +453,7 @@ namespace 中医信息管理系统.Logincians
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 25);
+            this.label1.Size = new System.Drawing.Size(321, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "著作";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -465,7 +465,7 @@ namespace 中医信息管理系统.Logincians
             this.rtbWork.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold);
             this.rtbWork.Location = new System.Drawing.Point(0, 0);
             this.rtbWork.Name = "rtbWork";
-            this.rtbWork.Size = new System.Drawing.Size(321, 48);
+            this.rtbWork.Size = new System.Drawing.Size(321, 51);
             this.rtbWork.TabIndex = 1;
             this.rtbWork.Text = "";
             // 
@@ -482,7 +482,7 @@ namespace 中医信息管理系统.Logincians
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.splitContainer4);
-            this.splitContainer3.Size = new System.Drawing.Size(680, 46);
+            this.splitContainer3.Size = new System.Drawing.Size(680, 25);
             this.splitContainer3.SplitterDistance = 201;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -494,7 +494,7 @@ namespace 中医信息管理系统.Logincians
             this.btnAdd.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnAdd.Location = new System.Drawing.Point(0, 0);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(201, 46);
+            this.btnAdd.Size = new System.Drawing.Size(201, 25);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -513,7 +513,7 @@ namespace 中医信息管理系统.Logincians
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.btnDel);
-            this.splitContainer4.Size = new System.Drawing.Size(475, 46);
+            this.splitContainer4.Size = new System.Drawing.Size(475, 25);
             this.splitContainer4.SplitterDistance = 219;
             this.splitContainer4.TabIndex = 0;
             // 
@@ -525,7 +525,7 @@ namespace 中医信息管理系统.Logincians
             this.btnUpdate.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnUpdate.Location = new System.Drawing.Point(0, 0);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(219, 46);
+            this.btnUpdate.Size = new System.Drawing.Size(219, 25);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "更新";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -539,7 +539,7 @@ namespace 中医信息管理系统.Logincians
             this.btnDel.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnDel.Location = new System.Drawing.Point(0, 0);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(252, 46);
+            this.btnDel.Size = new System.Drawing.Size(252, 25);
             this.btnDel.TabIndex = 1;
             this.btnDel.Text = "删除";
             this.btnDel.UseVisualStyleBackColor = false;

@@ -385,6 +385,7 @@ namespace 中医信息管理系统
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormMaiXue";
             this.Padding = new System.Windows.Forms.Padding(2);

@@ -9,12 +9,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 中医信息管理系统.entity;
 using 中医信息管理系统.中医古籍;
 
 namespace 中医信息管理系统
 {
     public partial class FormMain : Form
     {
+        public bool TabControlCheckHave(TabControl tab, string tabName) //看tabpage中是否已有窗体
+        {
+            for (int i = 0; i < tab.TabCount; i++)
+            {
+                if (tab.TabPages[i].Text == tabName)
+                {
+                    tab.SelectedIndex = i;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void OpenForm(Form myForm)   //打开选中窗体
+        {
+            panelForm.Controls.Clear();
+            myForm.FormBorderStyle = FormBorderStyle.None;
+            myForm.TopLevel = false;
+            myForm.Show();
+            myForm.Parent = panelForm;
+            myForm.Dock = DockStyle.Fill;
+        }
+
+        //public void Add_TabPage(string str, Form myForm) //将标题添加进tabpage中
+        //{
+        //    if (!TabControlCheckHave(this.tabControl1, str))
+        //    {
+        //        tabControl1.TabPages.Clear();
+        //        tabControl1.TabPages.Add(str);
+        //        tabControl1.SelectTab((int)(tabControl1.TabPages.Count - 1));
+        //        myForm.FormBorderStyle = FormBorderStyle.None;
+        //        myForm.TopLevel = false;
+        //        myForm.Show();
+        //        myForm.Parent = tabControl1.SelectedTab;
+        //        myForm.Dock = DockStyle.Fill;
+        //    }
+        //}
+
+        //public void CloseTabPage(int selectedIndex) //关闭标签页
+        //{
+        //    tabControl1.TabPages.RemoveAt(selectedIndex);
+        //}
+
         public FormMain()
         {
             InitializeComponent();
@@ -22,7 +66,12 @@ namespace 中医信息管理系统
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-
+            if (Login.Current.LoginRole == "求诊者")
+            {
+                基本信息ToolStripMenuItem.Enabled = false;
+                信息查询ToolStripMenuItem.Enabled = false;
+                基础理论ToolStripMenuItem.Enabled = false;
+            }
         }
 
         private void 濒湖脉学ToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -30,10 +79,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormMaiXue mx = new FormMaiXue();
-                mx.MdiParent = this;
-                mx.WindowState = FormWindowState.Maximized;
-                mx.Show();
-                mx.Activate();//切换页面,置顶
+                OpenForm(mx);
+                //Add_TabPage(mx.Text, mx);
             }
         }
 
@@ -42,10 +89,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FrmMedicineIn frmMedicineIn = new FrmMedicineIn();
-                frmMedicineIn.MdiParent = this;
-                frmMedicineIn.WindowState = FormWindowState.Maximized;
-                frmMedicineIn.Show();
-                frmMedicineIn.Activate();//切换页面,置顶
+                OpenForm(frmMedicineIn);
+                //Add_TabPage(frmMedicineIn.Text, frmMedicineIn);
             }
         }
 
@@ -54,10 +99,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormPeculiarPrescription pp = FormPeculiarPrescription.CreateInstance();
-                pp.MdiParent = this;
-                pp.WindowState = FormWindowState.Maximized;
-                pp.Show();
-                pp.Activate();//切换页面,置顶
+                OpenForm(pp);
+                //Add_TabPage(pp.Text, pp);
             }
         }
 
@@ -66,10 +109,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormLogicians ls = FormLogicians.CreateInstance();
-                ls.Show();
-                ls.MdiParent = this;
-                ls.WindowState = FormWindowState.Maximized;
-                ls.Activate();//切换页面,置顶
+                OpenForm(ls);
+                //Add_TabPage(ls.Text, ls);
             }
         }
 
@@ -78,10 +119,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormShangHanLun sh = new FormShangHanLun();
-                sh.MdiParent = this;
-                sh.WindowState = FormWindowState.Maximized;
-                sh.Show();
-                sh.Activate();//切换页面,置顶
+                OpenForm(sh);
+                //Add_TabPage(sh.Text, sh);
             }
         }
 
@@ -90,10 +129,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FrmChengYao cy = new FrmChengYao();
-                cy.MdiParent = this;
-                cy.WindowState = FormWindowState.Maximized;
-                cy.Show();
-                cy.Activate();//切换页面,置顶
+                OpenForm(cy);
+                //Add_TabPage(cy.Text, cy);
             }
         }
 
@@ -102,10 +139,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FrmFangji fj = new FrmFangji();
-                fj.MdiParent = this;
-                fj.WindowState = FormWindowState.Maximized;
-                fj.Show();
-                fj.Activate();//切换页面,置顶
+                OpenForm(fj);
+                //Add_TabPage(fj.Text, fj);
             }
         }
 
@@ -114,10 +149,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormJingLuo jl = new FormJingLuo();
-                jl.MdiParent = this;
-                jl.WindowState = FormWindowState.Maximized;
-                jl.Show();
-                jl.Activate();//切换页面,置顶
+                OpenForm(jl);
+                //Add_TabPage(jl.Text, jl);
             }
         }
 
@@ -126,10 +159,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormZhenDuan zd = new FormZhenDuan();
-                zd.MdiParent = this;
-                zd.WindowState = FormWindowState.Maximized;
-                zd.Show();
-                zd.Activate();//切换页面,置顶
+                OpenForm(zd);
+                //Add_TabPage(zd.Text, zd);
             }
         }
 
@@ -138,10 +169,8 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FrmPatient qz = new FrmPatient();
-                qz.MdiParent = this;
-                qz.WindowState = FormWindowState.Maximized;
-                qz.Show();
-                qz.Activate();//切换页面,置顶
+                OpenForm(qz);
+                //Add_TabPage(qz.Text, qz);
             }
         }
 
@@ -150,11 +179,20 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormDoctor ys = new FormDoctor();
-                ys.MdiParent = this;
-                ys.WindowState = FormWindowState.Maximized;
-                ys.Show();
-                ys.Activate();//切换页面,置顶
+                OpenForm(ys);
+                //Add_TabPage(ys.Text, ys);
             }
+        }
+
+        private void tabControl1_MouseDoubleClick(object sender, MouseEventArgs e)  //双击关闭标签页
+        {
+            //if (e.Button == MouseButtons.Left) // 只有左键双击才响应关闭
+            //    CloseTabPage(tabControl1.SelectedIndex);
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

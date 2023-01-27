@@ -14,6 +14,7 @@ namespace 中医信息管理系统
 {
     public partial class FrmPatient : Form
     {
+        int totalCount;
         public FrmPatient()
         {
             InitializeComponent();
@@ -23,7 +24,8 @@ namespace 中医信息管理系统
         {
             BindDgv();
         }
-        private void BindDgv()
+        
+        private void BindDgv()  //刷新Datagridview
         {
             //dgvFangji.Rows.Clear();
             int startIndex = uPager1.StartIndex;//开始索引
@@ -35,17 +37,17 @@ namespace 中医信息管理系统
                 new MySqlParameter("endIndex",endIndex)
             };
             DataSet ds = SqlHelper.GetDataSet("FindPatientListByPage", paras);
-            int totalCount = int.Parse(ds.Tables[0].Rows[0][0].ToString());//总记录数
+            totalCount = int.Parse(ds.Tables[0].Rows[0][0].ToString());//总记录数
             DataTable dt = ds.Tables[1];//数据列表
             dgvPatientInfo.DataSource = dt;
             uPager1.TotalCount = totalCount;
-          
         }
 
         private void uPager1_PageChanged(object sender, EventArgs e)
         {
             BindDgv();
         }
+        
         private void AddPatient()
         {
             string Id = txtId.Text.Trim();
@@ -120,6 +122,7 @@ namespace 中医信息管理系统
             AddPatient();
             BindDgv();
         }
+        
         /// <summary>
         /// 将Dgv中某行的数据加载到textbook中
         /// </summary>
@@ -165,6 +168,7 @@ namespace 中医信息管理系统
             txtRemark.Text = "";
             LoadDataToDgv(e);
         }
+        
         private void UpdatePatient()
         {
             string Id = txtId.Text.Trim();
@@ -228,7 +232,7 @@ namespace 中医信息管理系统
 
         private void tsmDel_Click(object sender, EventArgs e)
         {
-            string Id = txtId.Text.Trim();
+            string Id = dgvPatientInfo.CurrentRow.Cells["求诊者编号"].Value.ToString();
             if (MessageBox.Show("您确定要删除该求诊者信息吗？", "删除求诊者信息提示",
                         MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -251,10 +255,12 @@ namespace 中医信息管理系统
         {
             if (e.Button == MouseButtons.Right)
             {
-                if (e.RowIndex > -1)
-                    tsmDel.Visible = true;
+                tsmDel.Visible = true;
+                if (e.RowIndex >= totalCount)
+                {
+                    tsmDel.Visible = false;
+                }
             }
         }
-
     }
 }

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 中医信息管理系统.entity;
 
 namespace 中医信息管理系统
 {
@@ -141,6 +142,11 @@ namespace 中医信息管理系统
         {
             MySqlConnection con = GetCon();//连接数据库
             con.Open();//打开连接
+            if (Login.Current.LoginID != null)
+            {
+                txtUserID.Text = Login.Current.LoginID;
+                txtUserID.Enabled = false;
+            }
         }
 
         private void txtUserID_TextChanged(object sender, EventArgs e)  //求诊者编号文本框值监测

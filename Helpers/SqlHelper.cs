@@ -146,7 +146,7 @@ namespace GMS
             }
             catch
             {
-                MessageBox.Show("数据库连接失败，请检查网络连接后重试！");
+                MessageBox.Show("网络连接失败，请检查网络后重试！");
             }
             finally
             {

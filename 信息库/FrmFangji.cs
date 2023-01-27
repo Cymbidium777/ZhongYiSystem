@@ -87,7 +87,6 @@ namespace 中医信息管理系统
         private void FrmFangji_Load(object sender, EventArgs e)
         {
             DisplayTr();
-            // trvFangji.ExpandAll();
             BindDgv();
         }
 
@@ -104,7 +103,7 @@ namespace 中医信息管理系统
             if (txtSearch.Text != "")
             {
                 string MC = txtSearch.Text;
-                string sql = $"select * from `方剂信息` where 归类 like '%{txtSearch.Text}%' or 名称 like '%{txtSearch.Text}%'";
+                string sql = $"select 名称,功效主治,来源,用法用量 from `方剂信息` where 归类 like '%{txtSearch.Text}%' or 名称 like '%{txtSearch.Text}%' GROUP BY 名称 ORDER BY 名称 ";
                 MySqlParameter[] paras =
                 {
                     new MySqlParameter("@归类",MC)

@@ -110,34 +110,47 @@
   <ItemGroup>
     <Compile Include="entity\FolkPrescription.cs" />
     <Compile Include="entity\JingMai.cs" />
-    <Compile Include="FormDoctor.cs">
+    <Compile Include="entity\Login.cs" />
+    <Compile Include="FormCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDoctor.Designer.cs">
+    <Compile Include="FormCreate.Designer.cs">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本信息\FormDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本信息\FormDoctor.Designer.cs">
       <DependentUpon>FormDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormZhenDuan.cs">
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormZhenDuan.Designer.cs">
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本信息\FormZhenDuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本信息\FormZhenDuan.Designer.cs">
       <DependentUpon>FormZhenDuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmChengYao.cs">
+    <Compile Include="信息库\FrmChengYao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmChengYao.Designer.cs">
+    <Compile Include="信息库\FrmChengYao.Designer.cs">
       <DependentUpon>FrmChengYao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFangji.cs">
+    <Compile Include="信息库\FrmFangji.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFangji.Designer.cs">
+    <Compile Include="信息库\FrmFangji.Designer.cs">
       <DependentUpon>FrmFangji.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPatient.cs">
+    <Compile Include="基本信息\FrmPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPatient.Designer.cs">
+    <Compile Include="基本信息\FrmPatient.Designer.cs">
       <DependentUpon>FrmPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="UControls\UPager.cs">
@@ -146,24 +159,24 @@
     <Compile Include="UControls\UPager.Designer.cs">
       <DependentUpon>UPager.cs</DependentUpon>
     </Compile>
-    <Compile Include="中医古籍\FormMP4Player.cs">
+    <Compile Include="信息库\中医古籍\FormMP4Player.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="中医古籍\FormMP4Player.Designer.cs">
+    <Compile Include="信息库\中医古籍\FormMP4Player.Designer.cs">
       <DependentUpon>FormMP4Player.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\FormHelper.cs" />
     <Compile Include="Helpers\SelectLogicians.cs" />
-    <Compile Include="Logincians\FormAddLogicians.cs">
+    <Compile Include="信息库\Logincians\FormAddLogicians.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logincians\FormAddLogicians.Designer.cs">
+    <Compile Include="信息库\Logincians\FormAddLogicians.Designer.cs">
       <DependentUpon>FormAddLogicians.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logincians\FormLogicians.cs">
+    <Compile Include="信息库\Logincians\FormLogicians.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logincians\FormLogicians.Designer.cs">
+    <Compile Include="信息库\Logincians\FormLogicians.Designer.cs">
       <DependentUpon>FormLogicians.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
@@ -172,93 +185,99 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="中医古籍\FormJingLuo.cs">
+    <Compile Include="信息库\中医古籍\FormJingLuo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="中医古籍\FormJingLuo.Designer.cs">
+    <Compile Include="信息库\中医古籍\FormJingLuo.Designer.cs">
       <DependentUpon>FormJingLuo.cs</DependentUpon>
     </Compile>
-    <Compile Include="中医古籍\FormMaiXue.cs">
+    <Compile Include="信息库\中医古籍\FormMaiXue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="中医古籍\FormMaiXue.Designer.cs">
+    <Compile Include="信息库\中医古籍\FormMaiXue.Designer.cs">
       <DependentUpon>FormMaiXue.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPeculiarPrescription.cs">
+    <Compile Include="信息库\FormPeculiarPrescription.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPeculiarPrescription.Designer.cs">
+    <Compile Include="信息库\FormPeculiarPrescription.Designer.cs">
       <DependentUpon>FormPeculiarPrescription.cs</DependentUpon>
     </Compile>
-    <Compile Include="中医古籍\FormShangHanLun.cs">
+    <Compile Include="信息库\中医古籍\FormShangHanLun.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="中医古籍\FormShangHanLun.Designer.cs">
+    <Compile Include="信息库\中医古籍\FormShangHanLun.Designer.cs">
       <DependentUpon>FormShangHanLun.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMedicineIn.cs">
+    <Compile Include="信息库\FrmMedicineIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMedicineIn.Designer.cs">
+    <Compile Include="信息库\FrmMedicineIn.Designer.cs">
       <DependentUpon>FrmMedicineIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\DBUtil.cs" />
     <Compile Include="Helpers\NPOIHelper.cs" />
     <Compile Include="Helpers\SqlHelper.cs" />
-    <Compile Include="Logincians\FormSelectLogicians.cs">
+    <Compile Include="信息库\Logincians\FormSelectLogicians.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logincians\FormSelectLogicians.Designer.cs">
+    <Compile Include="信息库\Logincians\FormSelectLogicians.Designer.cs">
       <DependentUpon>FormSelectLogicians.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormDoctor.resx">
+    <EmbeddedResource Include="FormCreate.resx">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本信息\FormDoctor.resx">
       <DependentUpon>FormDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormZhenDuan.resx">
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本信息\FormZhenDuan.resx">
       <DependentUpon>FormZhenDuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmChengYao.resx">
+    <EmbeddedResource Include="信息库\FrmChengYao.resx">
       <DependentUpon>FrmChengYao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFangji.resx">
+    <EmbeddedResource Include="信息库\FrmFangji.resx">
       <DependentUpon>FrmFangji.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPatient.resx">
+    <EmbeddedResource Include="基本信息\FrmPatient.resx">
       <DependentUpon>FrmPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UControls\UPager.resx">
       <DependentUpon>UPager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="中医古籍\FormMP4Player.resx">
+    <EmbeddedResource Include="信息库\中医古籍\FormMP4Player.resx">
       <DependentUpon>FormMP4Player.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Logincians\FormAddLogicians.resx">
+    <EmbeddedResource Include="信息库\Logincians\FormAddLogicians.resx">
       <DependentUpon>FormAddLogicians.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Logincians\FormLogicians.resx">
+    <EmbeddedResource Include="信息库\Logincians\FormLogicians.resx">
       <DependentUpon>FormLogicians.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="中医古籍\FormJingLuo.resx">
+    <EmbeddedResource Include="信息库\中医古籍\FormJingLuo.resx">
       <DependentUpon>FormJingLuo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="中医古籍\FormMaiXue.resx">
+    <EmbeddedResource Include="信息库\中医古籍\FormMaiXue.resx">
       <DependentUpon>FormMaiXue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPeculiarPrescription.resx">
+    <EmbeddedResource Include="信息库\FormPeculiarPrescription.resx">
       <DependentUpon>FormPeculiarPrescription.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="中医古籍\FormShangHanLun.resx">
+    <EmbeddedResource Include="信息库\中医古籍\FormShangHanLun.resx">
       <DependentUpon>FormShangHanLun.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMedicineIn.resx">
+    <EmbeddedResource Include="信息库\FrmMedicineIn.resx">
       <DependentUpon>FrmMedicineIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Logincians\FormSelectLogicians.resx">
+    <EmbeddedResource Include="信息库\Logincians\FormSelectLogicians.resx">
       <DependentUpon>FormSelectLogicians.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

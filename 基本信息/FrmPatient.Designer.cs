@@ -193,6 +193,7 @@ namespace 中医信息管理系统
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "录入";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -204,6 +205,7 @@ namespace 中医信息管理系统
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "修改";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // splitContainer12
             // 
@@ -688,7 +690,7 @@ namespace 中医信息管理系统
             // 
             this.splitContainer14.Panel2.Controls.Add(this.uPager1);
             this.splitContainer14.Size = new System.Drawing.Size(776, 218);
-            this.splitContainer14.SplitterDistance = 180;
+            this.splitContainer14.SplitterDistance = 181;
             this.splitContainer14.SplitterWidth = 3;
             this.splitContainer14.TabIndex = 1;
             // 
@@ -703,7 +705,7 @@ namespace 中医信息管理系统
             this.dgvPatientInfo.Name = "dgvPatientInfo";
             this.dgvPatientInfo.RowHeadersWidth = 51;
             this.dgvPatientInfo.RowTemplate.Height = 27;
-            this.dgvPatientInfo.Size = new System.Drawing.Size(776, 180);
+            this.dgvPatientInfo.Size = new System.Drawing.Size(776, 181);
             this.dgvPatientInfo.TabIndex = 0;
             this.dgvPatientInfo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatientInfo_CellClick);
             this.dgvPatientInfo.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPatientInfo_CellMouseDown);
