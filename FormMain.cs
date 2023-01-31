@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using 中医信息管理系统.entity;
 using 中医信息管理系统.中医古籍;
+using 中医信息管理系统.信息库;
 
 namespace 中医信息管理系统
 {
@@ -98,7 +99,7 @@ namespace 中医信息管理系统
         {
             if (SqlHelper.ConnectTest())
             {
-                FormPeculiarPrescription pp = FormPeculiarPrescription.CreateInstance();
+                FrmPeculiarPrescription pp = FrmPeculiarPrescription.CreateInstance();
                 OpenForm(pp);
                 //Add_TabPage(pp.Text, pp);
             }
@@ -108,7 +109,7 @@ namespace 中医信息管理系统
         {
             if (SqlHelper.ConnectTest())
             {
-                FormLogicians ls = FormLogicians.CreateInstance();
+                FrmFamousExpert ls = FrmFamousExpert.CreateInstance();
                 OpenForm(ls);
                 //Add_TabPage(ls.Text, ls);
             }

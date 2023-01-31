@@ -14,22 +14,22 @@ using 中医信息管理系统.Helpers;
 
 namespace 中医信息管理系统
 {
-    public partial class FormPeculiarPrescription : Form
+    public partial class FrmPeculiarPrescription : Form
     {
-        public FormPeculiarPrescription()
+        public FrmPeculiarPrescription()
         {
             InitializeComponent();
         }
 
-        private static FormPeculiarPrescription pp = null;//初始化窗体
+        private static FrmPeculiarPrescription pp = null;//初始化窗体
         /// <summary>
         ///  //单例 只能出现一个窗体
         /// </summary>
         /// <returns></returns>
-        public static FormPeculiarPrescription CreateInstance()
+        public static FrmPeculiarPrescription CreateInstance()
         {
             if (pp == null || pp.IsDisposed) //窗体为空或被释放
-                pp = new FormPeculiarPrescription();
+                pp = new FrmPeculiarPrescription();
             return pp;
         }
 
