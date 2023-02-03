@@ -26,7 +26,20 @@ namespace 中医信息管理系统
             DataTable dt = SqlHelper.GetDataTable(sql);
             dgvMedicineIn.DataSource = dt;
             dgvMedicineIn.Columns[0].Visible = false;
+            //for (int i = 0; i < dgvMedicineIn.Rows.Count; i++)
+            //{
+            //    if (!"".Equals(dgvMedicineIn.Rows[i].Cells[1].Value.ToString()))
+            //    {
+            //        string sql1 = "UPDATE `中药信息` set 相关方剂 = (SELECT GROUP_CONCAT(名称) from `汤方歌诀汤方信息` where 方剂组成 like CONCAT('%',@名称,'%')) where 名称= @名称";
+            //        MySqlParameter[] paras1 =
+            //        {
+            //            new MySqlParameter("@名称",dgvMedicineIn.Rows[i].Cells[1].Value.ToString()),
+            //        };
+            //        SqlHelper.GetDataTable(sql1, paras1);
+            //    }
+            //}
         }
+
 
         private void FrmMedicineIn_Load(object sender, EventArgs e)
         {
@@ -84,7 +97,7 @@ namespace 中医信息管理系统
             AddMedicine();
         }
 
-        public void Search()    //查询中药信息s
+        public void Search()    //查询中药信息
         {
             string sql = $"select * from `中药信息` where 名称 like '%{txtName.Text}%'";
             DataTable dt = SqlHelper.GetDataTable(sql);
@@ -119,6 +132,32 @@ namespace 中医信息管理系统
         {
             txtName.Clear();
             LoadIn();
+        }
+
+        /// <summary>
+        /// 自动获取相关方剂信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtMC_TextChanged(object sender, EventArgs e)
+        {
+            if (!"".Equals(txtMC.Text))
+            {
+                string sqlFanji = "SELECT GROUP_CONCAT(名称) from `汤方歌诀汤方信息` where 方剂组成 like CONCAT('%',@名称,'%')";
+                MySqlParameter[] parasFanji =
+                {
+                new MySqlParameter("@名称",txtMC.Text),
+            };
+                DataTable dtFanji = SqlHelper.GetDataTable(sqlFanji, parasFanji);
+                if (dtFanji.Rows.Count > 0)
+                {
+                    txtXGFJ.Text = dtFanji.Rows[0][0].ToString();
+                }
+            }
+            else
+            {
+                txtXGFJ.Clear() ;
+            }
         }
     }
 }

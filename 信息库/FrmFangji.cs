@@ -20,7 +20,7 @@ namespace 中医信息管理系统
         }
         private void DisplayTr()//在根节点下面添加各部分的子节点
         {
-            string sql = "SELECT distinct(归类) FROM `方剂信息`";
+            string sql = "select DISTINCT(z.章节名称) from `汤方歌诀章节信息` as z INNER JOIN  `汤方歌诀汤方信息` as t where z.`章节编号`=t.`分类编号`";
             DataTable dt = SqlHelper.GetDataTable(sql);
             //MySqlParameter para1;
             //DataTable dt1;
@@ -28,29 +28,17 @@ namespace 中医信息管理系统
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 trvFangji.Nodes.Add(dt.Rows[i][0].ToString());//添加根节点
-                //根据每个根节点（即每个归类）查询相对应的名称
-                //sql1 = "select 名称 from `方剂信息` where 归类=@归类";
-                //para1 = new MySqlParameter("归类", dt.Rows[i][0].ToString());
-                //dt1 = SqlHelper.GetDataTable(sql1,para1);
-                //if(dt1.Rows.Count>0)
-                //{
-                //    for (int j = 0; j < dt1.Rows.Count; j++)
-                //    {
-                //        trvFangji.Nodes[i].Nodes.Add(dt1.Rows[j][0].ToString());
-                //    }
-                //}
             }
         }
         /// <summary>
-        /// 根据每个根节点（即每个归类）查询相对应的名称
+        /// 根据每个根节点（即每个分类编号）查询相对应的名称
         /// </summary>
         /// <param name="value"></param>
         /// <param name="i"></param>
         public void GetName(string value, int i)
         {
-            string sqlName = "select 名称 from `方剂信息` where 归类=@归类";
-            MySqlParameter paraName = new MySqlParameter("@归类", value);
-            DataTable dtName = SqlHelper.GetDataTable(sqlName, paraName);
+            string sqlName = $"select 名称 from `汤方歌诀汤方信息` where 分类编号=\"" + value + "\"";
+            DataTable dtName = SqlHelper.GetDataTable(sqlName);
             if (dtName.Rows.Count > 0)
             {
                 for (int j = 0; j < dtName.Rows.Count; j++)
@@ -62,7 +50,7 @@ namespace 中医信息管理系统
 
         private void DisPlayTb(string str)
         {
-            string sql = " SELECT * FROM `方剂信息` where  \"" + str + "\"=名称 ";
+            string sql = " SELECT * FROM `汤方歌诀汤方信息` where  \"" + str + "\"=名称 ";
             DataTable dt = SqlHelper.GetDataTable(sql);
             int length = dt.Rows.Count;
             if (length > 0)
@@ -103,10 +91,10 @@ namespace 中医信息管理系统
             if (txtSearch.Text != "")
             {
                 string MC = txtSearch.Text;
-                string sql = $"select 名称,功效主治,来源,用法用量 from `方剂信息` where 归类 like '%{txtSearch.Text}%' or 名称 like '%{txtSearch.Text}%' GROUP BY 名称 ORDER BY 名称 ";
+                string sql = $"select 名称,功效主治,来源,用法用量 from `汤方歌诀汤方信息` where  名称 like '%{txtSearch.Text}%'  GROUP BY 名称 ORDER BY 名称 ";
                 MySqlParameter[] paras =
                 {
-                    new MySqlParameter("@归类",MC)
+                    new MySqlParameter("@分类编号",MC)
                 };
                 DataTable dt = SqlHelper.GetDataTable(sql, paras);
                 int length = dt.Rows.Count;
@@ -139,13 +127,13 @@ namespace 中医信息管理系统
         private void BindDgv()
         {
             //dgvFangji.Rows.Clear();
-            string sql = " SELECT * FROM `方剂信息`";
+            string sql = " SELECT * FROM `汤方歌诀汤方信息`";
             DataTable dt = SqlHelper.GetDataTable(sql);
             dgvFangji.DataSource = dt;
         }
 
         /// <summary>
-        /// 添加方剂信息方法
+        /// 添加汤方歌诀汤方信息方法
         /// </summary>
         private void AddFangji()
         {
@@ -170,7 +158,7 @@ namespace 中医信息管理系统
             }
             if (string.IsNullOrEmpty(GL))
             {
-                MessageBox.Show("归类不能为空!", "添加归类提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("分类编号不能为空!", "添加分类编号提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (string.IsNullOrEmpty(GX))
@@ -179,7 +167,7 @@ namespace 中医信息管理系统
                 return;
             }
             //判断方剂名称是否存在
-            string sqlSelect = "select count(1) from `方剂信息`  where 名称=@名称";
+            string sqlSelect = "select count(1) from `汤方歌诀汤方信息`  where 名称=@名称";
             MySqlParameter[] parasSelect =
             {
                 new MySqlParameter("@名称",MC),
@@ -187,11 +175,11 @@ namespace 中医信息管理系统
             object o = SqlHelper.ExecuteScalar(sqlSelect, parasSelect);
             if (o != null && o != DBNull.Value && int.Parse(o.ToString()) > 0)
             {
-                MessageBox.Show("该方剂信息已经存在!", "添加方剂信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("该汤方歌诀汤方信息已经存在!", "添加汤方歌诀汤方信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            //添加方剂信息
-            string sql = $"insert into `方剂信息`(名称, 方歌, 方剂组成, 炮制, 用法用量, 功效主治, 方义分析, 加减方, 归类, 来源, 快速记忆, 注意事项,备注) values(@名称,@方歌, @方剂组成, @炮制, @用法用量, @功效主治, @方义分析, @加减方, @归类, @来源,@快速记忆, @注意事项, @备注)";
+            //添加汤方歌诀汤方信息
+            string sql = $"insert into `汤方歌诀汤方信息`(名称, 方歌, 方剂组成, 炮制, 用法用量, 功效主治, 方义分析, 加减方, 分类编号, 来源, 快速记忆, 注意事项,备注) values(@名称,@方歌, @方剂组成, @炮制, @用法用量, @功效主治, @方义分析, @加减方, @分类编号, @来源,@快速记忆, @注意事项, @备注)";
             MySqlParameter[] paras ={
                 new MySqlParameter("名称",MC),
                 new MySqlParameter("方歌",FG),
@@ -201,7 +189,7 @@ namespace 中医信息管理系统
                 new MySqlParameter("功效主治",GX),
                 new MySqlParameter("方义分析",FY),
                 new MySqlParameter("加减方",JJF),
-                new MySqlParameter("归类",GL),
+                new MySqlParameter("分类编号",GL),
                 new MySqlParameter("来源",LY),
                 new MySqlParameter("快速记忆",KSJY),
                 new MySqlParameter("注意事项",ZY),
@@ -214,7 +202,7 @@ namespace 中医信息管理系统
             }
             else
             {
-                MessageBox.Show("方剂信息录入失败，请检查！", "录入信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("汤方歌诀汤方信息录入失败，请检查！", "录入信息提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -226,9 +214,17 @@ namespace 中医信息管理系统
 
         private void trvFangji_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            trvFangji.SelectedNode.Nodes.Clear();
             int i = trvFangji.SelectedNode.Index;
-            string value = trvFangji.SelectedNode.Text.ToString();
-            GetName(value, i);
+            string name = trvFangji.SelectedNode.Text.ToString();
+            string sql = $"SELECT `章节编号` from `汤方歌诀章节信息` where `章节名称`=\"" + name + "\"";
+            DataTable dt = SqlHelper.GetDataTable(sql);
+            string value;
+            if (dt.Rows.Count > 0)
+            {
+                value = dt.Rows[0]["章节编号"].ToString();
+                GetName(value, i);
+            }
             string txt = trvFangji.SelectedNode.Text;
             DisPlayTb(txt);
             this.Text = "汤头方剂" + "——" + txt;
@@ -247,15 +243,15 @@ namespace 中医信息管理系统
         {
             try
             {
-                txtMC.Text = dgvFangji.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txtFG.Text = dgvFangji.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txtFJZC.Text = dgvFangji.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txtPZ.Text = dgvFangji.Rows[e.RowIndex].Cells[5].Value.ToString();
-                txtYF.Text = dgvFangji.Rows[e.RowIndex].Cells[6].Value.ToString();
-                txtGX.Text = dgvFangji.Rows[e.RowIndex].Cells[7].Value.ToString();
-                txtFY.Text = dgvFangji.Rows[e.RowIndex].Cells[8].Value.ToString();
-                txtJJF.Text = dgvFangji.Rows[e.RowIndex].Cells[9].Value.ToString();
-                txtGL.Text = dgvFangji.Rows[e.RowIndex].Cells[10].Value.ToString();
+                txtGL.Text = dgvFangji.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtMC.Text = dgvFangji.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtFG.Text = dgvFangji.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtFJZC.Text = dgvFangji.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtPZ.Text = dgvFangji.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txtYF.Text = dgvFangji.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txtGX.Text = dgvFangji.Rows[e.RowIndex].Cells[8].Value.ToString();
+                txtFY.Text = dgvFangji.Rows[e.RowIndex].Cells[9].Value.ToString();
+                txtJJF.Text = dgvFangji.Rows[e.RowIndex].Cells[10].Value.ToString();
                 txtLY.Text = dgvFangji.Rows[e.RowIndex].Cells[11].Value.ToString();
                 txtKSJY.Text = dgvFangji.Rows[e.RowIndex].Cells[12].Value.ToString();
                 txtZY.Text = dgvFangji.Rows[e.RowIndex].Cells[13].Value.ToString();
@@ -283,11 +279,11 @@ namespace 中医信息管理系统
             }
             if (string.IsNullOrEmpty(txtGL.Text))
             {
-                MessageBox.Show("归类不能为空!", "修改归类提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("分类编号不能为空!", "修改分类编号提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            string sql = $"update `方剂信息` set 名称='{txtMC.Text}',方歌='{txtFG.Text}',方剂组成='{txtFJZC.Text}',炮制='{txtPZ.Text}'," +
-                            $" 用法用量='{txtYF.Text}',功效主治='{txtGX.Text}',方义分析='{txtFY.Text}',加减方='{txtJJF.Text}',归类='{txtGL.Text}' ,来源='{txtLY.Text}'," +
+            string sql = $"update `汤方歌诀汤方信息` set 名称='{txtMC.Text}',方歌='{txtFG.Text}',方剂组成='{txtFJZC.Text}',炮制='{txtPZ.Text}'," +
+                            $" 用法用量='{txtYF.Text}',功效主治='{txtGX.Text}',方义分析='{txtFY.Text}',加减方='{txtJJF.Text}',分类编号='{txtGL.Text}' ,来源='{txtLY.Text}'," +
                             $" 快速记忆='{txtKSJY.Text}',注意事项='{txtZY.Text}',备注='{txtBZ.Text}' where 名称='{txtMC.Text}'";
             if (SqlHelper.ExecuteNonQuery(sql) > 0)
             {
@@ -295,7 +291,7 @@ namespace 中医信息管理系统
             }
             else
             {
-                MessageBox.Show("该方剂信息修改失败");
+                MessageBox.Show("该汤方歌诀汤方信息修改失败");
             }
         }
 
@@ -315,10 +311,10 @@ namespace 中医信息管理系统
         private void tsmDel_Click(object sender, EventArgs e)
         {
             string MC = txtMC.Text.Trim();
-            if (MessageBox.Show("您确定要删除该方剂信息吗？", "删除方剂提示",
+            if (MessageBox.Show("您确定要删除该汤方歌诀汤方信息吗？", "删除方剂提示",
                         MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                string sql = "delete  from `方剂信息` where 名称=@名称";
+                string sql = "delete  from `汤方歌诀汤方信息` where 名称=@名称";
                 MySqlParameter para = new MySqlParameter("@名称", MC);
                 int count = SqlHelper.ExecuteNonQuery(sql, para);
                 if (count > 0)
@@ -363,12 +359,12 @@ namespace 中医信息管理系统
             //真删除
             if (listIds.Count == 0)
             {
-                MessageBox.Show("请选择要删除的方剂信息！", "删除方剂提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("请选择要删除的汤方歌诀汤方信息！", "删除方剂提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
             {
-                if (MessageBox.Show("您确定要删除该方剂信息吗？", "删除方剂提示",
+                if (MessageBox.Show("您确定要删除该汤方歌诀汤方信息吗？", "删除方剂提示",
                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int count = 0;
@@ -387,7 +383,7 @@ namespace 中医信息管理系统
                         {
                             foreach (int idDel in listIds)
                             {
-                                cmd.CommandText = "delete from `方剂信息` where 编号=@编号";
+                                cmd.CommandText = "delete from `汤方歌诀汤方信息` where 编号=@编号";
                                 MySqlParameter para = new MySqlParameter("@编号", idDel);
                                 cmd.Parameters.Clear();
                                 cmd.Parameters.Add(para);
@@ -398,13 +394,13 @@ namespace 中医信息管理系统
                         catch (MySqlException)
                         {
                             trans.Rollback();
-                            MessageBox.Show("删除方剂信息出现异常！", "删除方剂提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("删除汤方歌诀汤方信息出现异常！", "删除方剂提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
                     }
                     if (count == listIds.Count)
                     {
-                        MessageBox.Show("这批方剂信息删除成功！", "删除方剂提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("这批汤方歌诀汤方信息删除成功！", "删除方剂提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //手动刷新
                         DataTable dt = (DataTable)dgvFangji.DataSource;
                         //dgvStudents.DataSource = null;
