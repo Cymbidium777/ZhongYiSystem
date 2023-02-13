@@ -25,6 +25,5 @@ namespace 中医信息管理系统.entity
         public string CreateID { get; set; } //注册编号
         public string CreatePW { get; set; } //注册密码
         public string CreateRole { get; set; } //注册身份
-
     }
 }

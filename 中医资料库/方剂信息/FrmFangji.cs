@@ -130,6 +130,7 @@ namespace 中医信息管理系统
             string sql = " SELECT * FROM `汤方歌诀汤方信息`";
             DataTable dt = SqlHelper.GetDataTable(sql);
             dgvFangji.DataSource = dt;
+            dgvFangji.Columns[2].Visible = false;
         }
 
         /// <summary>

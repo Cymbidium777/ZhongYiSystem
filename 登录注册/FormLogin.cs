@@ -42,7 +42,29 @@ namespace 中医信息管理系统
         {
             if (SqlHelper.ConnectTest())
             {
-                if (rdbCustom.Checked == true)
+                if (txtID.Text == "000000")
+                {
+                    string sql = "SELECT id FROM `管理员信息` WHERE id=@id AND pw=@pw";
+                    MySqlParameter[] paras =
+                    {
+                        new MySqlParameter("@id",txtID.Text),
+                        new MySqlParameter("@pw",txtKey.Text)
+                    };
+                    DataTable dt = SqlHelper.GetDataTable(sql, paras);
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("用户名或密码错误，请重新登录");
+                    }
+                    else
+                    {
+                        Login.Current.LoginID = txtID.Text;
+                        Login.Current.LoginRole = "医生";
+                        FormMain fm = new FormMain();
+                        fm.Show();
+                        Hide();
+                    }
+                }
+                else if (rdbCustom.Checked == true)
                 {
                     string sql = "SELECT id FROM `求诊者信息` WHERE `求诊者编号`=@求诊者编号 AND `登录密码`=@登录密码";
                     MySqlParameter[] paras =

@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using 中医信息管理系统.entity;
 using 中医信息管理系统.中医古籍;
 using 中医信息管理系统.信息库;
+using 中医信息管理系统.帮助;
 
 namespace 中医信息管理系统
 {
@@ -67,121 +68,18 @@ namespace 中医信息管理系统
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            if (Login.Current.LoginRole == "求诊者")
+            if (Login.Current.LoginID=="000000")
             {
-                基本信息ToolStripMenuItem.Enabled = false;
-                信息查询ToolStripMenuItem.Enabled = false;
-                基础理论ToolStripMenuItem.Enabled = false;
+                用户管理ToolStripMenuItem.Enabled = true;
+                权限管理ToolStripMenuItem.Enabled = true;
+                诊断报告ToolStripMenuItem.Enabled = false;
             }
-        }
-
-        private void 濒湖脉学ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
+            else if (Login.Current.LoginRole == "求诊者")
             {
-                FormMaiXue mx = new FormMaiXue();
-                OpenForm(mx);
-                //Add_TabPage(mx.Text, mx);
-            }
-        }
-
-        private void 中药信息ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FrmMedicineIn frmMedicineIn = new FrmMedicineIn();
-                OpenForm(frmMedicineIn);
-                //Add_TabPage(frmMedicineIn.Text, frmMedicineIn);
-            }
-        }
-
-        private void 民间偏方ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FrmPeculiarPrescription pp = FrmPeculiarPrescription.CreateInstance();
-                OpenForm(pp);
-                //Add_TabPage(pp.Text, pp);
-            }
-        }
-
-        private void 历代名家ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FrmFamousExpert ls = FrmFamousExpert.CreateInstance();
-                OpenForm(ls);
-                //Add_TabPage(ls.Text, ls);
-            }
-        }
-
-        private void 伤寒杂病论ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FormShangHanLun sh = new FormShangHanLun();
-                OpenForm(sh);
-                //Add_TabPage(sh.Text, sh);
-            }
-        }
-
-        private void 成药信息ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FrmChengYao cy = new FrmChengYao();
-                OpenForm(cy);
-                //Add_TabPage(cy.Text, cy);
-            }
-        }
-
-        private void 汤头方剂ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FrmFangji fj = new FrmFangji();
-                OpenForm(fj);
-                //Add_TabPage(fj.Text, fj);
-            }
-        }
-
-        private void 经络信息ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FormJingLuo jl = new FormJingLuo();
-                OpenForm(jl);
-                //Add_TabPage(jl.Text, jl);
-            }
-        }
-
-        private void 中医诊断ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FormZhenDuan zd = new FormZhenDuan();
-                OpenForm(zd);
-                //Add_TabPage(zd.Text, zd);
-            }
-        }
-
-        private void 求诊信息ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FrmPatient qz = new FrmPatient();
-                OpenForm(qz);
-                //Add_TabPage(qz.Text, qz);
-            }
-        }
-
-        private void 基本信息ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (SqlHelper.ConnectTest())
-            {
-                FormDoctor ys = new FormDoctor();
-                OpenForm(ys);
-                //Add_TabPage(ys.Text, ys);
+                用户信息ToolStripMenuItem.Enabled = false;
+                中医资料库ToolStripMenuItem.Enabled = false;
+                医生诊断ToolStripMenuItem.Enabled = false;
+                仪器诊断ToolStripMenuItem.Enabled = false;
             }
         }
 
@@ -194,6 +92,123 @@ namespace 中医信息管理系统
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void 医生信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormDoctor form = new FormDoctor();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 求诊者信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FrmPatient form = new FrmPatient();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 查询报告ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormZhenDuan form = new FormZhenDuan();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 中药信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FrmMedicineIn form = new FrmMedicineIn();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 成药信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FrmChengYao form = new FrmChengYao();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 汤头方剂ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FrmFangji form = new FrmFangji();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 濒湖脉学ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormMaiXue form = new FormMaiXue();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 伤寒杂病论ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormShangHanLun form = new FormShangHanLun();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 历代名家ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FrmFamousExpert form = new FrmFamousExpert();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 民间偏方ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FrmPeculiarPrescription form = new FrmPeculiarPrescription();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 经络信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormJingLuo form = new FormJingLuo();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAbout form = new FormAbout();
+            form.Show();
+            //Add_TabPage(mx.Text, mx);
         }
     }
 }

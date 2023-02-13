@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using 中医信息管理系统.中医古籍;
+using 中医信息管理系统.帮助;
 
 namespace 中医信息管理系统
 {

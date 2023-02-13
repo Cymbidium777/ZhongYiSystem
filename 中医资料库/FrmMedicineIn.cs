@@ -25,7 +25,7 @@ namespace 中医信息管理系统
             string sql = "SELECT * FROM `中药信息`";
             DataTable dt = SqlHelper.GetDataTable(sql);
             dgvMedicineIn.DataSource = dt;
-            dgvMedicineIn.Columns[0].Visible = false;
+            //dgvMedicineIn.Columns[0].Visible = false;
             //for (int i = 0; i < dgvMedicineIn.Rows.Count; i++)
             //{
             //    if (!"".Equals(dgvMedicineIn.Rows[i].Cells[1].Value.ToString()))
