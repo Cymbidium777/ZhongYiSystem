@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -209,6 +210,17 @@ namespace 中医信息管理系统
             FormAbout form = new FormAbout();
             form.Show();
             //Add_TabPage(mx.Text, mx);
+        }
+
+        private void 注销ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("您确定要退出登陆吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                FormMain M = new FormMain();
+                FormLogin create = new FormLogin(M);
+                create.Show();
+                Hide();
+            }
         }
     }
 }

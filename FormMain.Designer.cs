@@ -290,21 +290,22 @@ namespace 中医信息管理系统
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // 反馈ToolStripMenuItem
             // 
             this.反馈ToolStripMenuItem.Name = "反馈ToolStripMenuItem";
-            this.反馈ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.反馈ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.反馈ToolStripMenuItem.Text = "反馈";
             // 
             // 注销ToolStripMenuItem
             // 
             this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
-            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.注销ToolStripMenuItem.Text = "注销";
+            this.注销ToolStripMenuItem.Click += new System.EventHandler(this.注销ToolStripMenuItem_Click);
             // 
             // panelForm
             // 

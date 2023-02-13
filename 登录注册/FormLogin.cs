@@ -15,6 +15,14 @@ namespace 中医信息管理系统
 {
     public partial class FormLogin : Form
     {
+        FormMain login = null;
+
+        public FormLogin(FormMain M)
+        {
+            login = M;
+            InitializeComponent();
+        }
+
         public FormLogin()
         {
             InitializeComponent();
@@ -32,6 +40,18 @@ namespace 中医信息管理系统
                     rdbCustom.Checked = true;
                 }
                 else if(Login.Current.CreateRole == "医生")
+                {
+                    rdbDoctor.Checked = true;
+                }
+            }
+            else if(Login.Current.LoginID != null && Login.Current.LoginRole != null)
+            {
+                txtID.Text = Login.Current.LoginID;
+                if (Login.Current.LoginRole == "求诊者")
+                {
+                    rdbCustom.Checked = true;
+                }
+                else if (Login.Current.LoginRole == "医生")
                 {
                     rdbDoctor.Checked = true;
                 }
@@ -58,7 +78,7 @@ namespace 中医信息管理系统
                     else
                     {
                         Login.Current.LoginID = txtID.Text;
-                        Login.Current.LoginRole = "医生";
+                        Login.Current.LoginRole = "管理员";
                         FormMain fm = new FormMain();
                         fm.Show();
                         Hide();
@@ -101,6 +121,8 @@ namespace 中医信息管理系统
                     }
                     else
                     {
+                        Login.Current.LoginID = txtID.Text;
+                        Login.Current.LoginRole = "医生";
                         FormMain fm = new FormMain();
                         fm.Show();
                         Hide();
