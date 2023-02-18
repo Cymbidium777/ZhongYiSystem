@@ -1,4 +1,5 @@
 ﻿using GMS;
+using GMS.系统管理;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -81,6 +82,7 @@ namespace 中医信息管理系统
                 中医资料库ToolStripMenuItem.Enabled = false;
                 医生诊断ToolStripMenuItem.Enabled = false;
                 仪器诊断ToolStripMenuItem.Enabled = false;
+                编辑报告ToolStripMenuItem.Enabled = false;
             }
         }
 
@@ -115,7 +117,7 @@ namespace 中医信息管理系统
             }
         }
 
-        private void 查询报告ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 编辑报告ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (SqlHelper.ConnectTest())
             {
@@ -220,6 +222,16 @@ namespace 中医信息管理系统
                 FormLogin create = new FormLogin(M);
                 create.Show();
                 Hide();
+            }
+        }
+
+        private void 密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormPassword form = new FormPassword();
+                form.Show();
+                //Add_TabPage(mx.Text, mx);
             }
         }
     }

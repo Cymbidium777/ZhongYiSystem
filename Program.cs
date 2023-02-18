@@ -1,10 +1,12 @@
-﻿using System;
+﻿using GMS.系统管理;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using 中医信息管理系统.中医古籍;
 using 中医信息管理系统.帮助;
+using 中医信息管理系统.诊断报告;
 
 namespace 中医信息管理系统
 {
@@ -18,7 +20,7 @@ namespace 中医信息管理系统
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormPrint());
         }
     }
 }

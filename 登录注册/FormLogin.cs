@@ -74,6 +74,7 @@ namespace 中医信息管理系统
                     if (dt.Rows.Count == 0)
                     {
                         MessageBox.Show("用户名或密码错误，请重新登录");
+                        txtKey.Clear();
                     }
                     else
                     {
@@ -96,6 +97,7 @@ namespace 中医信息管理系统
                     if (dt.Rows.Count == 0)
                     {
                         MessageBox.Show("用户名或密码错误，请重新登录");
+                        txtKey.Clear();
                     }
                     else
                     {
@@ -118,6 +120,7 @@ namespace 中医信息管理系统
                     if (dt.Rows.Count == 0)
                     {
                         MessageBox.Show("用户名或密码错误，请重新登录");
+                        txtKey.Clear();
                     }
                     else
                     {

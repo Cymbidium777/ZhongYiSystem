@@ -147,11 +147,23 @@
     <Compile Include="登录注册\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="诊断报告\FormZhenDuan.cs">
+    <Compile Include="系统管理\FormPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="诊断报告\FormZhenDuan.Designer.cs">
-      <DependentUpon>FormZhenDuan.cs</DependentUpon>
+    <Compile Include="系统管理\FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊断报告\FormPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊断报告\FormPrint.Designer.cs">
+      <DependentUpon>FormPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊断报告\FormEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊断报告\FormEdit.Designer.cs">
+      <DependentUpon>FormEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="中医资料库\方剂信息\FrmChengYao.cs">
       <SubType>Form</SubType>
@@ -237,8 +249,14 @@
     <EmbeddedResource Include="登录注册\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="诊断报告\FormZhenDuan.resx">
-      <DependentUpon>FormZhenDuan.cs</DependentUpon>
+    <EmbeddedResource Include="系统管理\FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊断报告\FormPrint.resx">
+      <DependentUpon>FormPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊断报告\FormEdit.resx">
+      <DependentUpon>FormEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="中医资料库\方剂信息\FrmChengYao.resx">
       <DependentUpon>FrmChengYao.cs</DependentUpon>
@@ -315,7 +333,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="中医诊断\" />
-    <Folder Include="系统管理\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

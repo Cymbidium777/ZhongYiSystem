@@ -34,13 +34,14 @@ namespace 中医信息管理系统
             this.医生信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.求诊者信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.诊断报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.查询报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.编辑报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打印报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.中医诊断ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自主诊断ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.仪器诊断ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.医生诊断ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.中医资料库ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.自主查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.中药信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.方剂信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.成药信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,23 +107,23 @@ namespace 中医信息管理系统
             // 诊断报告ToolStripMenuItem
             // 
             this.诊断报告ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.查询报告ToolStripMenuItem,
+            this.编辑报告ToolStripMenuItem,
             this.打印报告ToolStripMenuItem});
             this.诊断报告ToolStripMenuItem.Name = "诊断报告ToolStripMenuItem";
             this.诊断报告ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.诊断报告ToolStripMenuItem.Text = "诊断报告";
             // 
-            // 查询报告ToolStripMenuItem
+            // 编辑报告ToolStripMenuItem
             // 
-            this.查询报告ToolStripMenuItem.Name = "查询报告ToolStripMenuItem";
-            this.查询报告ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.查询报告ToolStripMenuItem.Text = "查询报告";
-            this.查询报告ToolStripMenuItem.Click += new System.EventHandler(this.查询报告ToolStripMenuItem_Click);
+            this.编辑报告ToolStripMenuItem.Name = "编辑报告ToolStripMenuItem";
+            this.编辑报告ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.编辑报告ToolStripMenuItem.Text = "编辑报告";
+            this.编辑报告ToolStripMenuItem.Click += new System.EventHandler(this.编辑报告ToolStripMenuItem_Click);
             // 
             // 打印报告ToolStripMenuItem
             // 
             this.打印报告ToolStripMenuItem.Name = "打印报告ToolStripMenuItem";
-            this.打印报告ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.打印报告ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.打印报告ToolStripMenuItem.Text = "打印报告";
             // 
             // 中医诊断ToolStripMenuItem
@@ -156,6 +157,7 @@ namespace 中医信息管理系统
             // 中医资料库ToolStripMenuItem
             // 
             this.中医资料库ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.自主查询ToolStripMenuItem,
             this.中药信息ToolStripMenuItem,
             this.方剂信息ToolStripMenuItem,
             this.濒湖脉学ToolStripMenuItem,
@@ -165,6 +167,12 @@ namespace 中医信息管理系统
             this.中医资料库ToolStripMenuItem.Name = "中医资料库ToolStripMenuItem";
             this.中医资料库ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.中医资料库ToolStripMenuItem.Text = "中医资料库";
+            // 
+            // 自主查询ToolStripMenuItem
+            // 
+            this.自主查询ToolStripMenuItem.Name = "自主查询ToolStripMenuItem";
+            this.自主查询ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.自主查询ToolStripMenuItem.Text = "自主查询";
             // 
             // 中药信息ToolStripMenuItem
             // 
@@ -255,27 +263,28 @@ namespace 中医信息管理系统
             // 
             this.用户管理ToolStripMenuItem.Enabled = false;
             this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.用户管理ToolStripMenuItem.Text = "用户管理";
             // 
             // 权限管理ToolStripMenuItem
             // 
             this.权限管理ToolStripMenuItem.Enabled = false;
             this.权限管理ToolStripMenuItem.Name = "权限管理ToolStripMenuItem";
-            this.权限管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.权限管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.权限管理ToolStripMenuItem.Text = "权限管理";
             // 
             // 界面设置ToolStripMenuItem
             // 
             this.界面设置ToolStripMenuItem.Name = "界面设置ToolStripMenuItem";
-            this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.界面设置ToolStripMenuItem.Text = "界面设置";
             // 
             // 密码修改ToolStripMenuItem
             // 
             this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
-            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.密码修改ToolStripMenuItem.Text = "密码修改";
+            this.密码修改ToolStripMenuItem.Click += new System.EventHandler(this.密码修改ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -290,20 +299,20 @@ namespace 中医信息管理系统
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // 反馈ToolStripMenuItem
             // 
             this.反馈ToolStripMenuItem.Name = "反馈ToolStripMenuItem";
-            this.反馈ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.反馈ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.反馈ToolStripMenuItem.Text = "反馈";
             // 
             // 注销ToolStripMenuItem
             // 
             this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
-            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.注销ToolStripMenuItem.Text = "注销";
             this.注销ToolStripMenuItem.Click += new System.EventHandler(this.注销ToolStripMenuItem_Click);
             // 
@@ -363,7 +372,7 @@ namespace 中医信息管理系统
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.ToolStripMenuItem 医生信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 求诊者信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 查询报告ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 编辑报告ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 打印报告ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 自主诊断ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 仪器诊断ToolStripMenuItem;
@@ -372,6 +381,7 @@ namespace 中医信息管理系统
         private System.Windows.Forms.ToolStripMenuItem 权限管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 界面设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 密码修改ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 自主查询ToolStripMenuItem;
     }
 }
 

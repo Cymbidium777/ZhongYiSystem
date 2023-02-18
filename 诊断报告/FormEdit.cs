@@ -142,10 +142,15 @@ namespace 中医信息管理系统
         {
             MySqlConnection con = GetCon();//连接数据库
             con.Open();//打开连接
-            if (Login.Current.LoginID != null)
+            if (Login.Current.LoginRole=="求诊者")
             {
                 txtUserID.Text = Login.Current.LoginID;
                 txtUserID.Enabled = false;
+            }
+            else if (Login.Current.LoginRole=="医生")
+            {
+                txtDoctorID.Text = Login.Current.LoginID;
+                txtDoctorID.Enabled = false;
             }
         }
 
