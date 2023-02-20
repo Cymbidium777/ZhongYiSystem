@@ -325,7 +325,6 @@ namespace 中医信息管理系统
             this.界面设置ToolStripMenuItem.Name = "界面设置ToolStripMenuItem";
             this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.界面设置ToolStripMenuItem.Text = "界面设置";
-            this.界面设置ToolStripMenuItem.Click += new System.EventHandler(this.界面设置ToolStripMenuItem_Click);
             // 
             // 密码修改ToolStripMenuItem
             // 
