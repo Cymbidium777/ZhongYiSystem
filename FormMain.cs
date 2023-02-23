@@ -234,5 +234,15 @@ namespace 中医信息管理系统
                 //Add_TabPage(mx.Text, mx);
             }
         }
+
+        private void 中医查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormSearch form = new FormSearch();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
     }
 }

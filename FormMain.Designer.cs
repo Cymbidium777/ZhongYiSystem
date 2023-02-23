@@ -51,13 +51,6 @@ namespace 中医信息管理系统
             this.民间偏方ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.经络信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.中医查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.历史名医ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.现代名医ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.一般病症ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.疑难杂症ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.养生保健ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.权限管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -243,57 +236,10 @@ namespace 中医信息管理系统
             // 
             // 中医查询ToolStripMenuItem
             // 
-            this.中医查询ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.历史名医ToolStripMenuItem,
-            this.现代名医ToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.一般病症ToolStripMenuItem,
-            this.疑难杂症ToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.养生保健ToolStripMenuItem});
             this.中医查询ToolStripMenuItem.Name = "中医查询ToolStripMenuItem";
             this.中医查询ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.中医查询ToolStripMenuItem.Text = "中医查询";
-            // 
-            // 历史名医ToolStripMenuItem
-            // 
-            this.历史名医ToolStripMenuItem.Name = "历史名医ToolStripMenuItem";
-            this.历史名医ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.历史名医ToolStripMenuItem.Text = "历史名医";
-            // 
-            // 现代名医ToolStripMenuItem
-            // 
-            this.现代名医ToolStripMenuItem.Name = "现代名医ToolStripMenuItem";
-            this.现代名医ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.现代名医ToolStripMenuItem.Text = "现代名医";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
-            // 
-            // 一般病症ToolStripMenuItem
-            // 
-            this.一般病症ToolStripMenuItem.Name = "一般病症ToolStripMenuItem";
-            this.一般病症ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.一般病症ToolStripMenuItem.Text = "一般病症";
-            // 
-            // 疑难杂症ToolStripMenuItem
-            // 
-            this.疑难杂症ToolStripMenuItem.Name = "疑难杂症ToolStripMenuItem";
-            this.疑难杂症ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.疑难杂症ToolStripMenuItem.Text = "疑难杂症";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(121, 6);
-            // 
-            // 养生保健ToolStripMenuItem
-            // 
-            this.养生保健ToolStripMenuItem.Name = "养生保健ToolStripMenuItem";
-            this.养生保健ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.养生保健ToolStripMenuItem.Text = "养生保健";
+            this.中医查询ToolStripMenuItem.Click += new System.EventHandler(this.中医查询ToolStripMenuItem_Click);
             // 
             // 系统管理ToolStripMenuItem
             // 
@@ -310,26 +256,26 @@ namespace 中医信息管理系统
             // 
             this.用户管理ToolStripMenuItem.Enabled = false;
             this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.用户管理ToolStripMenuItem.Text = "用户管理";
             // 
             // 权限管理ToolStripMenuItem
             // 
             this.权限管理ToolStripMenuItem.Enabled = false;
             this.权限管理ToolStripMenuItem.Name = "权限管理ToolStripMenuItem";
-            this.权限管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.权限管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.权限管理ToolStripMenuItem.Text = "权限管理";
             // 
             // 界面设置ToolStripMenuItem
             // 
             this.界面设置ToolStripMenuItem.Name = "界面设置ToolStripMenuItem";
-            this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.界面设置ToolStripMenuItem.Text = "界面设置";
             // 
             // 密码修改ToolStripMenuItem
             // 
             this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
-            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.密码修改ToolStripMenuItem.Text = "密码修改";
             this.密码修改ToolStripMenuItem.Click += new System.EventHandler(this.密码修改ToolStripMenuItem_Click);
             // 
@@ -418,13 +364,6 @@ namespace 中医信息管理系统
         private System.Windows.Forms.ToolStripMenuItem 民间偏方ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 经络信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 中医查询ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 历史名医ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 现代名医ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem 一般病症ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 疑难杂症ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem 养生保健ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 系统管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 用户管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 权限管理ToolStripMenuItem;

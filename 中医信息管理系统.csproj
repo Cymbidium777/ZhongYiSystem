@@ -117,6 +117,19 @@
     <Compile Include="entity\FolkPrescription.cs" />
     <Compile Include="entity\JingMai.cs" />
     <Compile Include="entity\Login.cs" />
+    <Compile Include="中医查询\FormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="中医查询\FormSearch.Designer.cs">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="中医查询\FormResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="中医查询\FormResult.Designer.cs">
+      <DependentUpon>FormResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DtHelper.cs" />
     <Compile Include="帮助\FormAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +250,12 @@
     <Compile Include="Helpers\SqlHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="中医查询\FormSearch.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="中医查询\FormResult.resx">
+      <DependentUpon>FormResult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="帮助\FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
