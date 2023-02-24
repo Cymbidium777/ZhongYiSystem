@@ -76,10 +76,10 @@ namespace 中医信息管理系统
             // labTitle
             // 
             this.labTitle.AutoSize = true;
-            this.labTitle.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labTitle.Location = new System.Drawing.Point(512, 142);
+            this.labTitle.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labTitle.Location = new System.Drawing.Point(484, 131);
             this.labTitle.Name = "labTitle";
-            this.labTitle.Size = new System.Drawing.Size(131, 31);
+            this.labTitle.Size = new System.Drawing.Size(190, 46);
             this.labTitle.TabIndex = 3;
             this.labTitle.Text = "中 医 查 询";
             // 

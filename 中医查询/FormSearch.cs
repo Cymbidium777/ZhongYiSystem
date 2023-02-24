@@ -21,13 +21,14 @@ namespace 中医信息管理系统
         private void FormSearch_Load(object sender, EventArgs e)
         {
             cboSearch.SelectedIndex = 0;
+            txtSearch.Select();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string SearchName = cboSearch.Text;
             string str = txtSearch.Text;
-            FormResult fm = new FormResult(str,SearchName);
+            FormResult fm = new FormResult(str, SearchName);
             fm.Show();
         }
     }
