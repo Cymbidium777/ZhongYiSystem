@@ -53,7 +53,6 @@ namespace 中医信息管理系统
             this.中医查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.权限管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.界面设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.密码修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +60,7 @@ namespace 中医信息管理系统
             this.反馈ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.编辑记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@ namespace 中医信息管理系统
             this.帮助ToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1184, 25);
+            this.menuStrip.Size = new System.Drawing.Size(1084, 25);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -125,6 +125,7 @@ namespace 中医信息管理系统
             this.打印报告ToolStripMenuItem.Name = "打印报告ToolStripMenuItem";
             this.打印报告ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.打印报告ToolStripMenuItem.Text = "打印报告";
+            this.打印报告ToolStripMenuItem.Click += new System.EventHandler(this.打印报告ToolStripMenuItem_Click);
             // 
             // 中医诊断ToolStripMenuItem
             // 
@@ -245,7 +246,7 @@ namespace 中医信息管理系统
             // 
             this.系统管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.用户管理ToolStripMenuItem,
-            this.权限管理ToolStripMenuItem,
+            this.编辑记录ToolStripMenuItem,
             this.界面设置ToolStripMenuItem,
             this.密码修改ToolStripMenuItem});
             this.系统管理ToolStripMenuItem.Name = "系统管理ToolStripMenuItem";
@@ -256,26 +257,19 @@ namespace 中医信息管理系统
             // 
             this.用户管理ToolStripMenuItem.Enabled = false;
             this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.用户管理ToolStripMenuItem.Text = "用户管理";
-            // 
-            // 权限管理ToolStripMenuItem
-            // 
-            this.权限管理ToolStripMenuItem.Enabled = false;
-            this.权限管理ToolStripMenuItem.Name = "权限管理ToolStripMenuItem";
-            this.权限管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.权限管理ToolStripMenuItem.Text = "权限管理";
             // 
             // 界面设置ToolStripMenuItem
             // 
             this.界面设置ToolStripMenuItem.Name = "界面设置ToolStripMenuItem";
-            this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.界面设置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.界面设置ToolStripMenuItem.Text = "界面设置";
             // 
             // 密码修改ToolStripMenuItem
             // 
             this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
-            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.密码修改ToolStripMenuItem.Text = "密码修改";
             this.密码修改ToolStripMenuItem.Click += new System.EventHandler(this.密码修改ToolStripMenuItem_Click);
             // 
@@ -314,14 +308,21 @@ namespace 中医信息管理系统
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(0, 25);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1184, 536);
+            this.panelForm.Size = new System.Drawing.Size(1084, 536);
             this.panelForm.TabIndex = 4;
+            // 
+            // 编辑记录ToolStripMenuItem
+            // 
+            this.编辑记录ToolStripMenuItem.Enabled = false;
+            this.编辑记录ToolStripMenuItem.Name = "编辑记录ToolStripMenuItem";
+            this.编辑记录ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.编辑记录ToolStripMenuItem.Text = "编辑记录";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.menuStrip);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -366,7 +367,6 @@ namespace 中医信息管理系统
         private System.Windows.Forms.ToolStripMenuItem 中医查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 系统管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 用户管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 权限管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 界面设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 密码修改ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
@@ -374,6 +374,7 @@ namespace 中医信息管理系统
         private System.Windows.Forms.ToolStripMenuItem 反馈ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 注销ToolStripMenuItem;
         private System.Windows.Forms.Panel panelForm;
+        private System.Windows.Forms.ToolStripMenuItem 编辑记录ToolStripMenuItem;
     }
 }
 

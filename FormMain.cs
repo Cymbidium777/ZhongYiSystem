@@ -15,6 +15,7 @@ using 中医信息管理系统.entity;
 using 中医信息管理系统.中医古籍;
 using 中医信息管理系统.信息库;
 using 中医信息管理系统.帮助;
+using 中医信息管理系统.诊断报告;
 
 namespace 中医信息管理系统
 {
@@ -73,7 +74,7 @@ namespace 中医信息管理系统
             if (Login.Current.LoginID=="000000")
             {
                 用户管理ToolStripMenuItem.Enabled = true;
-                权限管理ToolStripMenuItem.Enabled = true;
+                编辑记录ToolStripMenuItem.Enabled = true;
                 诊断报告ToolStripMenuItem.Enabled = false;
             }
             else if (Login.Current.LoginRole == "求诊者")
@@ -83,6 +84,10 @@ namespace 中医信息管理系统
                 医生诊断ToolStripMenuItem.Enabled = false;
                 仪器诊断ToolStripMenuItem.Enabled = false;
                 编辑报告ToolStripMenuItem.Enabled = false;
+            }
+            else if (Login.Current.LoginRole == "医生")
+            {
+                打印报告ToolStripMenuItem.Enabled = false;
             }
         }
 
@@ -240,6 +245,16 @@ namespace 中医信息管理系统
             if (SqlHelper.ConnectTest())
             {
                 FormSearch form = new FormSearch();
+                OpenForm(form);
+                //Add_TabPage(mx.Text, mx);
+            }
+        }
+
+        private void 打印报告ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SqlHelper.ConnectTest())
+            {
+                FormPrint form = new FormPrint();
                 OpenForm(form);
                 //Add_TabPage(mx.Text, mx);
             }

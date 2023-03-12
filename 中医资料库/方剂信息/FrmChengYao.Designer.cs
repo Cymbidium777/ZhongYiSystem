@@ -1375,6 +1375,7 @@ namespace 中医信息管理系统
             this.dgvChengYao.Location = new System.Drawing.Point(0, 0);
             this.dgvChengYao.Margin = new System.Windows.Forms.Padding(2);
             this.dgvChengYao.Name = "dgvChengYao";
+            this.dgvChengYao.ReadOnly = true;
             this.dgvChengYao.RowHeadersWidth = 50;
             this.dgvChengYao.RowTemplate.Height = 27;
             this.dgvChengYao.Size = new System.Drawing.Size(788, 250);
@@ -1387,6 +1388,7 @@ namespace 中医信息管理系统
             this.colCheck.HeaderText = "选择";
             this.colCheck.MinimumWidth = 6;
             this.colCheck.Name = "colCheck";
+            this.colCheck.ReadOnly = true;
             // 
             // Column14
             // 
@@ -1394,6 +1396,7 @@ namespace 中医信息管理系统
             this.Column14.HeaderText = "编号";
             this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
             // 
             // Column1
             // 
@@ -1401,6 +1404,7 @@ namespace 中医信息管理系统
             this.Column1.HeaderText = "名称";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
@@ -1408,6 +1412,7 @@ namespace 中医信息管理系统
             this.Column2.HeaderText = "处方";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
@@ -1415,6 +1420,7 @@ namespace 中医信息管理系统
             this.Column3.HeaderText = "制备方法";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
@@ -1422,6 +1428,7 @@ namespace 中医信息管理系统
             this.Column4.HeaderText = "药方分析";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
@@ -1429,6 +1436,7 @@ namespace 中医信息管理系统
             this.Column5.HeaderText = "剂型规格";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
@@ -1436,6 +1444,7 @@ namespace 中医信息管理系统
             this.Column6.HeaderText = "功效主治";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
@@ -1443,6 +1452,7 @@ namespace 中医信息管理系统
             this.Column7.HeaderText = "用法用量";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
@@ -1450,6 +1460,7 @@ namespace 中医信息管理系统
             this.Column8.HeaderText = "使用禁忌";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // Column9
             // 
@@ -1457,6 +1468,7 @@ namespace 中医信息管理系统
             this.Column9.HeaderText = "临床应用";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // Column10
             // 
@@ -1464,6 +1476,7 @@ namespace 中医信息管理系统
             this.Column10.HeaderText = "贮藏";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // Column11
             // 
@@ -1471,6 +1484,7 @@ namespace 中医信息管理系统
             this.Column11.HeaderText = "方歌";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // Column12
             // 
@@ -1478,6 +1492,7 @@ namespace 中医信息管理系统
             this.Column12.HeaderText = "归类";
             this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
             // 
             // Column13
             // 
@@ -1485,6 +1500,7 @@ namespace 中医信息管理系统
             this.Column13.HeaderText = "功能分类";
             this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 

@@ -113,6 +113,7 @@ namespace 中医信息管理系统
             this.rdbDoctor.Text = "医生";
             this.rdbDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rdbDoctor.UseVisualStyleBackColor = true;
+            this.rdbDoctor.CheckedChanged += new System.EventHandler(this.rdbDoctor_CheckedChanged);
             // 
             // rdbCustom
             // 
@@ -126,6 +127,7 @@ namespace 中医信息管理系统
             this.rdbCustom.Text = "求诊者";
             this.rdbCustom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rdbCustom.UseVisualStyleBackColor = true;
+            this.rdbCustom.CheckedChanged += new System.EventHandler(this.rdbCustom_CheckedChanged);
             // 
             // label2
             // 

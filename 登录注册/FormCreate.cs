@@ -146,7 +146,14 @@ namespace 中医信息管理系统
 
         private void FormCreate_Load(object sender, EventArgs e)
         {
-            rdbCustom.Checked = true;
+            if (Login.Current.CreateRole=="医生")
+            {
+                rdbDoctor.Checked = true;
+            }
+            else
+            {
+                rdbCustom.Checked = true;
+            }
         }
 
         private void btnCreate_Click(object sender, EventArgs e)    //注册按钮

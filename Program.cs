@@ -20,7 +20,7 @@ namespace 中医信息管理系统
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSearch());
+            Application.Run(new FormLogin());
         }
     }
 }

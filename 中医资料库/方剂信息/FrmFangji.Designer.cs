@@ -111,8 +111,6 @@ namespace 中医信息管理系统
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnMutiDel = new System.Windows.Forms.Button();
             this.dgvFangji = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmDel = new System.Windows.Forms.ToolStripMenuItem();
             this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -128,6 +126,8 @@ namespace 中医信息管理系统
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmDel = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -223,10 +223,10 @@ namespace 中医信息管理系统
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1067, 562);
+            this.tabControl1.Size = new System.Drawing.Size(800, 450);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -234,10 +234,10 @@ namespace 中医信息管理系统
             this.tabPage1.Controls.Add(this.splitContainer1);
             this.tabPage1.Controls.Add(this.richTextBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1059, 529);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(792, 420);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "方剂查询";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -246,8 +246,8 @@ namespace 中医信息管理系统
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 2);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Location = new System.Drawing.Point(2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -257,8 +257,9 @@ namespace 中医信息管理系统
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControl2);
-            this.splitContainer1.Size = new System.Drawing.Size(1053, 525);
+            this.splitContainer1.Size = new System.Drawing.Size(788, 416);
             this.splitContainer1.SplitterDistance = 179;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 1;
             // 
             // splitContainer2
@@ -266,7 +267,7 @@ namespace 中医信息管理系统
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -277,8 +278,9 @@ namespace 中医信息管理系统
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.trvFangji);
-            this.splitContainer2.Size = new System.Drawing.Size(179, 525);
+            this.splitContainer2.Size = new System.Drawing.Size(179, 416);
             this.splitContainer2.SplitterDistance = 30;
+            this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
             // panel1
@@ -286,7 +288,7 @@ namespace 中医信息管理系统
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(179, 30);
             this.panel1.TabIndex = 0;
@@ -300,7 +302,7 @@ namespace 中医信息管理系统
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -311,21 +313,21 @@ namespace 中医信息管理系统
             // 
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSearch.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtSearch.Location = new System.Drawing.Point(3, 2);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.Location = new System.Drawing.Point(2, 2);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(119, 26);
+            this.txtSearch.Size = new System.Drawing.Size(121, 26);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
             // 
             // btnSearch
             // 
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSearch.Location = new System.Drawing.Point(128, 2);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Location = new System.Drawing.Point(127, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(48, 26);
+            this.btnSearch.Size = new System.Drawing.Size(50, 26);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "搜索";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -336,9 +338,9 @@ namespace 中医信息管理系统
             this.trvFangji.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trvFangji.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.trvFangji.Location = new System.Drawing.Point(0, 0);
-            this.trvFangji.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trvFangji.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trvFangji.Name = "trvFangji";
-            this.trvFangji.Size = new System.Drawing.Size(179, 491);
+            this.trvFangji.Size = new System.Drawing.Size(179, 383);
             this.trvFangji.TabIndex = 0;
             this.trvFangji.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trvFangji_AfterSelect);
             // 
@@ -359,20 +361,20 @@ namespace 中医信息管理系统
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(870, 525);
+            this.tabControl2.Size = new System.Drawing.Size(606, 416);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.rtbMC);
-            this.tabPage3.Location = new System.Drawing.Point(4, 32);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(862, 489);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(598, 383);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "方剂名称";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -380,21 +382,21 @@ namespace 中医信息管理系统
             // rtbMC
             // 
             this.rtbMC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbMC.Location = new System.Drawing.Point(3, 2);
-            this.rtbMC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbMC.Location = new System.Drawing.Point(2, 2);
+            this.rtbMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbMC.Name = "rtbMC";
-            this.rtbMC.Size = new System.Drawing.Size(856, 485);
+            this.rtbMC.Size = new System.Drawing.Size(594, 379);
             this.rtbMC.TabIndex = 0;
             this.rtbMC.Text = "";
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.rtbFG);
-            this.tabPage4.Location = new System.Drawing.Point(4, 32);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(800, 484);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Size = new System.Drawing.Size(644, 387);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "方歌";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -402,21 +404,21 @@ namespace 中医信息管理系统
             // rtbFG
             // 
             this.rtbFG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbFG.Location = new System.Drawing.Point(3, 2);
-            this.rtbFG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbFG.Location = new System.Drawing.Point(2, 2);
+            this.rtbFG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbFG.Name = "rtbFG";
-            this.rtbFG.Size = new System.Drawing.Size(794, 480);
+            this.rtbFG.Size = new System.Drawing.Size(640, 383);
             this.rtbFG.TabIndex = 0;
             this.rtbFG.Text = "";
             // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.rtbFJZC);
-            this.tabPage5.Location = new System.Drawing.Point(4, 32);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Size = new System.Drawing.Size(800, 484);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Size = new System.Drawing.Size(644, 387);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "方剂组成";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -424,21 +426,21 @@ namespace 中医信息管理系统
             // rtbFJZC
             // 
             this.rtbFJZC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbFJZC.Location = new System.Drawing.Point(3, 2);
-            this.rtbFJZC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbFJZC.Location = new System.Drawing.Point(2, 2);
+            this.rtbFJZC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbFJZC.Name = "rtbFJZC";
-            this.rtbFJZC.Size = new System.Drawing.Size(794, 480);
+            this.rtbFJZC.Size = new System.Drawing.Size(640, 383);
             this.rtbFJZC.TabIndex = 0;
             this.rtbFJZC.Text = "";
             // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.rtbPZ);
-            this.tabPage6.Location = new System.Drawing.Point(4, 32);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage6.Location = new System.Drawing.Point(4, 29);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage6.Size = new System.Drawing.Size(800, 484);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Size = new System.Drawing.Size(644, 387);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "炮制";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -446,21 +448,21 @@ namespace 中医信息管理系统
             // rtbPZ
             // 
             this.rtbPZ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbPZ.Location = new System.Drawing.Point(3, 2);
-            this.rtbPZ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbPZ.Location = new System.Drawing.Point(2, 2);
+            this.rtbPZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbPZ.Name = "rtbPZ";
-            this.rtbPZ.Size = new System.Drawing.Size(794, 480);
+            this.rtbPZ.Size = new System.Drawing.Size(640, 383);
             this.rtbPZ.TabIndex = 0;
             this.rtbPZ.Text = "";
             // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.rtbYF);
-            this.tabPage7.Location = new System.Drawing.Point(4, 32);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage7.Size = new System.Drawing.Size(800, 484);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Size = new System.Drawing.Size(644, 387);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "用法用量";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -468,21 +470,21 @@ namespace 中医信息管理系统
             // rtbYF
             // 
             this.rtbYF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbYF.Location = new System.Drawing.Point(3, 2);
-            this.rtbYF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbYF.Location = new System.Drawing.Point(2, 2);
+            this.rtbYF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbYF.Name = "rtbYF";
-            this.rtbYF.Size = new System.Drawing.Size(794, 480);
+            this.rtbYF.Size = new System.Drawing.Size(640, 383);
             this.rtbYF.TabIndex = 0;
             this.rtbYF.Text = "";
             // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.rtbGX);
-            this.tabPage8.Location = new System.Drawing.Point(4, 32);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage8.Location = new System.Drawing.Point(4, 29);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage8.Size = new System.Drawing.Size(800, 484);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage8.Size = new System.Drawing.Size(644, 387);
             this.tabPage8.TabIndex = 5;
             this.tabPage8.Text = "功效主治";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -490,21 +492,21 @@ namespace 中医信息管理系统
             // rtbGX
             // 
             this.rtbGX.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbGX.Location = new System.Drawing.Point(3, 2);
-            this.rtbGX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbGX.Location = new System.Drawing.Point(2, 2);
+            this.rtbGX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbGX.Name = "rtbGX";
-            this.rtbGX.Size = new System.Drawing.Size(794, 480);
+            this.rtbGX.Size = new System.Drawing.Size(640, 383);
             this.rtbGX.TabIndex = 0;
             this.rtbGX.Text = "";
             // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.rtbFY);
-            this.tabPage9.Location = new System.Drawing.Point(4, 32);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage9.Location = new System.Drawing.Point(4, 29);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage9.Size = new System.Drawing.Size(800, 484);
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage9.Size = new System.Drawing.Size(644, 387);
             this.tabPage9.TabIndex = 6;
             this.tabPage9.Text = "方义分析";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -512,21 +514,21 @@ namespace 中医信息管理系统
             // rtbFY
             // 
             this.rtbFY.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbFY.Location = new System.Drawing.Point(3, 2);
-            this.rtbFY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbFY.Location = new System.Drawing.Point(2, 2);
+            this.rtbFY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbFY.Name = "rtbFY";
-            this.rtbFY.Size = new System.Drawing.Size(794, 480);
+            this.rtbFY.Size = new System.Drawing.Size(640, 383);
             this.rtbFY.TabIndex = 0;
             this.rtbFY.Text = "";
             // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.rtbJJF);
-            this.tabPage10.Location = new System.Drawing.Point(4, 32);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage10.Location = new System.Drawing.Point(4, 29);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage10.Size = new System.Drawing.Size(800, 484);
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage10.Size = new System.Drawing.Size(644, 387);
             this.tabPage10.TabIndex = 7;
             this.tabPage10.Text = "加减方";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -534,21 +536,21 @@ namespace 中医信息管理系统
             // rtbJJF
             // 
             this.rtbJJF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbJJF.Location = new System.Drawing.Point(3, 2);
-            this.rtbJJF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbJJF.Location = new System.Drawing.Point(2, 2);
+            this.rtbJJF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbJJF.Name = "rtbJJF";
-            this.rtbJJF.Size = new System.Drawing.Size(794, 480);
+            this.rtbJJF.Size = new System.Drawing.Size(640, 383);
             this.rtbJJF.TabIndex = 0;
             this.rtbJJF.Text = "";
             // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.rtbLY);
-            this.tabPage11.Location = new System.Drawing.Point(4, 32);
-            this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage11.Location = new System.Drawing.Point(4, 29);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage11.Size = new System.Drawing.Size(800, 484);
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage11.Size = new System.Drawing.Size(644, 387);
             this.tabPage11.TabIndex = 8;
             this.tabPage11.Text = "来源";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -556,21 +558,21 @@ namespace 中医信息管理系统
             // rtbLY
             // 
             this.rtbLY.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbLY.Location = new System.Drawing.Point(3, 2);
-            this.rtbLY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbLY.Location = new System.Drawing.Point(2, 2);
+            this.rtbLY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbLY.Name = "rtbLY";
-            this.rtbLY.Size = new System.Drawing.Size(794, 480);
+            this.rtbLY.Size = new System.Drawing.Size(640, 383);
             this.rtbLY.TabIndex = 0;
             this.rtbLY.Text = "";
             // 
             // tabPage12
             // 
             this.tabPage12.Controls.Add(this.rtbKS);
-            this.tabPage12.Location = new System.Drawing.Point(4, 32);
-            this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage12.Location = new System.Drawing.Point(4, 29);
+            this.tabPage12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage12.Size = new System.Drawing.Size(800, 484);
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage12.Size = new System.Drawing.Size(644, 387);
             this.tabPage12.TabIndex = 9;
             this.tabPage12.Text = "快速记忆";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -578,21 +580,21 @@ namespace 中医信息管理系统
             // rtbKS
             // 
             this.rtbKS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbKS.Location = new System.Drawing.Point(3, 2);
-            this.rtbKS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbKS.Location = new System.Drawing.Point(2, 2);
+            this.rtbKS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbKS.Name = "rtbKS";
-            this.rtbKS.Size = new System.Drawing.Size(794, 480);
+            this.rtbKS.Size = new System.Drawing.Size(640, 383);
             this.rtbKS.TabIndex = 0;
             this.rtbKS.Text = "";
             // 
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.rtbZY);
-            this.tabPage13.Location = new System.Drawing.Point(4, 32);
-            this.tabPage13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage13.Location = new System.Drawing.Point(4, 29);
+            this.tabPage13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage13.Size = new System.Drawing.Size(800, 484);
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage13.Size = new System.Drawing.Size(644, 387);
             this.tabPage13.TabIndex = 10;
             this.tabPage13.Text = "注意事项";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -600,21 +602,21 @@ namespace 中医信息管理系统
             // rtbZY
             // 
             this.rtbZY.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbZY.Location = new System.Drawing.Point(3, 2);
-            this.rtbZY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbZY.Location = new System.Drawing.Point(2, 2);
+            this.rtbZY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbZY.Name = "rtbZY";
-            this.rtbZY.Size = new System.Drawing.Size(794, 480);
+            this.rtbZY.Size = new System.Drawing.Size(640, 383);
             this.rtbZY.TabIndex = 0;
             this.rtbZY.Text = "";
             // 
             // tabPage14
             // 
             this.tabPage14.Controls.Add(this.rtbBZ);
-            this.tabPage14.Location = new System.Drawing.Point(4, 32);
-            this.tabPage14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage14.Location = new System.Drawing.Point(4, 29);
+            this.tabPage14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage14.Size = new System.Drawing.Size(800, 484);
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage14.Size = new System.Drawing.Size(644, 387);
             this.tabPage14.TabIndex = 11;
             this.tabPage14.Text = "备注";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -622,20 +624,20 @@ namespace 中医信息管理系统
             // rtbBZ
             // 
             this.rtbBZ.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbBZ.Location = new System.Drawing.Point(3, 2);
-            this.rtbBZ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbBZ.Location = new System.Drawing.Point(2, 2);
+            this.rtbBZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbBZ.Name = "rtbBZ";
-            this.rtbBZ.Size = new System.Drawing.Size(794, 480);
+            this.rtbBZ.Size = new System.Drawing.Size(640, 383);
             this.rtbBZ.TabIndex = 0;
             this.rtbBZ.Text = "";
             // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 2);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.richTextBox1.Location = new System.Drawing.Point(2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1053, 525);
+            this.richTextBox1.Size = new System.Drawing.Size(788, 416);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -643,10 +645,10 @@ namespace 中医信息管理系统
             // 
             this.tabPage2.Controls.Add(this.splitContainer3);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1059, 529);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(792, 420);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "方剂录入";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -655,8 +657,8 @@ namespace 中医信息管理系统
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer3.Location = new System.Drawing.Point(3, 2);
-            this.splitContainer3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer3.Location = new System.Drawing.Point(2, 2);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -667,8 +669,9 @@ namespace 中医信息管理系统
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.dgvFangji);
-            this.splitContainer3.Size = new System.Drawing.Size(1053, 525);
+            this.splitContainer3.Size = new System.Drawing.Size(788, 416);
             this.splitContainer3.SplitterDistance = 160;
+            this.splitContainer3.SplitterWidth = 3;
             this.splitContainer3.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -696,22 +699,22 @@ namespace 中医信息管理系统
             this.tableLayoutPanel1.Controls.Add(this.btnMutiDel, 3, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1053, 160);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 160);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // splitContainer19
             // 
             this.splitContainer19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer19.Location = new System.Drawing.Point(792, 82);
-            this.splitContainer19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer19.Location = new System.Drawing.Point(592, 82);
+            this.splitContainer19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer19.Name = "splitContainer19";
             // 
             // splitContainer19.Panel1
@@ -721,8 +724,9 @@ namespace 中医信息管理系统
             // splitContainer19.Panel2
             // 
             this.splitContainer19.Panel2.Controls.Add(this.txtZY);
-            this.splitContainer19.Size = new System.Drawing.Size(258, 36);
-            this.splitContainer19.SplitterDistance = 83;
+            this.splitContainer19.Size = new System.Drawing.Size(194, 36);
+            this.splitContainer19.SplitterDistance = 62;
+            this.splitContainer19.SplitterWidth = 3;
             this.splitContainer19.TabIndex = 15;
             // 
             // label14
@@ -731,8 +735,9 @@ namespace 中医信息管理系统
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(0, 0);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 36);
+            this.label14.Size = new System.Drawing.Size(62, 36);
             this.label14.TabIndex = 1;
             this.label14.Text = "注意事项";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -742,18 +747,18 @@ namespace 中医信息管理系统
             this.txtZY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtZY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtZY.Location = new System.Drawing.Point(0, 0);
-            this.txtZY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtZY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtZY.Multiline = true;
             this.txtZY.Name = "txtZY";
             this.txtZY.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtZY.Size = new System.Drawing.Size(171, 36);
+            this.txtZY.Size = new System.Drawing.Size(129, 36);
             this.txtZY.TabIndex = 1;
             // 
             // splitContainer18
             // 
             this.splitContainer18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer18.Location = new System.Drawing.Point(529, 82);
-            this.splitContainer18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer18.Location = new System.Drawing.Point(395, 82);
+            this.splitContainer18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer18.Name = "splitContainer18";
             // 
             // splitContainer18.Panel1
@@ -763,8 +768,9 @@ namespace 中医信息管理系统
             // splitContainer18.Panel2
             // 
             this.splitContainer18.Panel2.Controls.Add(this.txtKSJY);
-            this.splitContainer18.Size = new System.Drawing.Size(257, 36);
-            this.splitContainer18.SplitterDistance = 82;
+            this.splitContainer18.Size = new System.Drawing.Size(193, 36);
+            this.splitContainer18.SplitterDistance = 61;
+            this.splitContainer18.SplitterWidth = 3;
             this.splitContainer18.TabIndex = 14;
             // 
             // label13
@@ -773,8 +779,9 @@ namespace 中医信息管理系统
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label13.Location = new System.Drawing.Point(0, 0);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 36);
+            this.label13.Size = new System.Drawing.Size(61, 36);
             this.label13.TabIndex = 1;
             this.label13.Text = "快速记忆";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -784,18 +791,18 @@ namespace 中医信息管理系统
             this.txtKSJY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKSJY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtKSJY.Location = new System.Drawing.Point(0, 0);
-            this.txtKSJY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtKSJY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtKSJY.Multiline = true;
             this.txtKSJY.Name = "txtKSJY";
             this.txtKSJY.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtKSJY.Size = new System.Drawing.Size(171, 36);
+            this.txtKSJY.Size = new System.Drawing.Size(129, 36);
             this.txtKSJY.TabIndex = 1;
             // 
             // splitContainer17
             // 
             this.splitContainer17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer17.Location = new System.Drawing.Point(251, 82);
-            this.splitContainer17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer17.Location = new System.Drawing.Point(187, 82);
+            this.splitContainer17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer17.Name = "splitContainer17";
             // 
             // splitContainer17.Panel1
@@ -805,8 +812,9 @@ namespace 中医信息管理系统
             // splitContainer17.Panel2
             // 
             this.splitContainer17.Panel2.Controls.Add(this.txtLY);
-            this.splitContainer17.Size = new System.Drawing.Size(272, 36);
-            this.splitContainer17.SplitterDistance = 89;
+            this.splitContainer17.Size = new System.Drawing.Size(204, 36);
+            this.splitContainer17.SplitterDistance = 66;
+            this.splitContainer17.SplitterWidth = 3;
             this.splitContainer17.TabIndex = 13;
             // 
             // label12
@@ -815,8 +823,9 @@ namespace 中医信息管理系统
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 36);
+            this.label12.Size = new System.Drawing.Size(66, 36);
             this.label12.TabIndex = 1;
             this.label12.Text = "来源";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -826,18 +835,18 @@ namespace 中医信息管理系统
             this.txtLY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLY.Location = new System.Drawing.Point(0, 0);
-            this.txtLY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLY.Multiline = true;
             this.txtLY.Name = "txtLY";
             this.txtLY.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLY.Size = new System.Drawing.Size(179, 36);
+            this.txtLY.Size = new System.Drawing.Size(135, 36);
             this.txtLY.TabIndex = 1;
             // 
             // splitContainer16
             // 
             this.splitContainer16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer16.Location = new System.Drawing.Point(3, 82);
-            this.splitContainer16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer16.Location = new System.Drawing.Point(2, 82);
+            this.splitContainer16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer16.Name = "splitContainer16";
             // 
             // splitContainer16.Panel1
@@ -847,8 +856,9 @@ namespace 中医信息管理系统
             // splitContainer16.Panel2
             // 
             this.splitContainer16.Panel2.Controls.Add(this.txtGL);
-            this.splitContainer16.Size = new System.Drawing.Size(242, 36);
-            this.splitContainer16.SplitterDistance = 78;
+            this.splitContainer16.Size = new System.Drawing.Size(181, 36);
+            this.splitContainer16.SplitterDistance = 58;
+            this.splitContainer16.SplitterWidth = 3;
             this.splitContainer16.TabIndex = 12;
             // 
             // label11
@@ -857,8 +867,9 @@ namespace 中医信息管理系统
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 36);
+            this.label11.Size = new System.Drawing.Size(58, 36);
             this.label11.TabIndex = 1;
             this.label11.Text = "分类编号";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -868,18 +879,18 @@ namespace 中医信息管理系统
             this.txtGL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtGL.Location = new System.Drawing.Point(0, 0);
-            this.txtGL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtGL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGL.Multiline = true;
             this.txtGL.Name = "txtGL";
             this.txtGL.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtGL.Size = new System.Drawing.Size(160, 36);
+            this.txtGL.Size = new System.Drawing.Size(120, 36);
             this.txtGL.TabIndex = 1;
             // 
             // splitContainer15
             // 
             this.splitContainer15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer15.Location = new System.Drawing.Point(792, 42);
-            this.splitContainer15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer15.Location = new System.Drawing.Point(592, 42);
+            this.splitContainer15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer15.Name = "splitContainer15";
             // 
             // splitContainer15.Panel1
@@ -889,8 +900,9 @@ namespace 中医信息管理系统
             // splitContainer15.Panel2
             // 
             this.splitContainer15.Panel2.Controls.Add(this.txtJJF);
-            this.splitContainer15.Size = new System.Drawing.Size(258, 36);
-            this.splitContainer15.SplitterDistance = 83;
+            this.splitContainer15.Size = new System.Drawing.Size(194, 36);
+            this.splitContainer15.SplitterDistance = 62;
+            this.splitContainer15.SplitterWidth = 3;
             this.splitContainer15.TabIndex = 11;
             // 
             // label10
@@ -899,8 +911,9 @@ namespace 中医信息管理系统
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 36);
+            this.label10.Size = new System.Drawing.Size(62, 36);
             this.label10.TabIndex = 1;
             this.label10.Text = "加减方";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -910,18 +923,18 @@ namespace 中医信息管理系统
             this.txtJJF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtJJF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtJJF.Location = new System.Drawing.Point(0, 0);
-            this.txtJJF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtJJF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtJJF.Multiline = true;
             this.txtJJF.Name = "txtJJF";
             this.txtJJF.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtJJF.Size = new System.Drawing.Size(171, 36);
+            this.txtJJF.Size = new System.Drawing.Size(129, 36);
             this.txtJJF.TabIndex = 1;
             // 
             // splitContainer14
             // 
             this.splitContainer14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer14.Location = new System.Drawing.Point(529, 42);
-            this.splitContainer14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer14.Location = new System.Drawing.Point(395, 42);
+            this.splitContainer14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer14.Name = "splitContainer14";
             // 
             // splitContainer14.Panel1
@@ -931,8 +944,9 @@ namespace 中医信息管理系统
             // splitContainer14.Panel2
             // 
             this.splitContainer14.Panel2.Controls.Add(this.txtFY);
-            this.splitContainer14.Size = new System.Drawing.Size(257, 36);
-            this.splitContainer14.SplitterDistance = 82;
+            this.splitContainer14.Size = new System.Drawing.Size(193, 36);
+            this.splitContainer14.SplitterDistance = 61;
+            this.splitContainer14.SplitterWidth = 3;
             this.splitContainer14.TabIndex = 10;
             // 
             // label9
@@ -941,8 +955,9 @@ namespace 中医信息管理系统
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 36);
+            this.label9.Size = new System.Drawing.Size(61, 36);
             this.label9.TabIndex = 1;
             this.label9.Text = "方义分析";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -952,18 +967,18 @@ namespace 中医信息管理系统
             this.txtFY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFY.Location = new System.Drawing.Point(0, 0);
-            this.txtFY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFY.Multiline = true;
             this.txtFY.Name = "txtFY";
             this.txtFY.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtFY.Size = new System.Drawing.Size(171, 36);
+            this.txtFY.Size = new System.Drawing.Size(129, 36);
             this.txtFY.TabIndex = 1;
             // 
             // splitContainer13
             // 
             this.splitContainer13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer13.Location = new System.Drawing.Point(251, 42);
-            this.splitContainer13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer13.Location = new System.Drawing.Point(187, 42);
+            this.splitContainer13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer13.Name = "splitContainer13";
             // 
             // splitContainer13.Panel1
@@ -973,8 +988,9 @@ namespace 中医信息管理系统
             // splitContainer13.Panel2
             // 
             this.splitContainer13.Panel2.Controls.Add(this.txtGX);
-            this.splitContainer13.Size = new System.Drawing.Size(272, 36);
-            this.splitContainer13.SplitterDistance = 89;
+            this.splitContainer13.Size = new System.Drawing.Size(204, 36);
+            this.splitContainer13.SplitterDistance = 66;
+            this.splitContainer13.SplitterWidth = 3;
             this.splitContainer13.TabIndex = 9;
             // 
             // label8
@@ -983,8 +999,9 @@ namespace 中医信息管理系统
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 36);
+            this.label8.Size = new System.Drawing.Size(66, 36);
             this.label8.TabIndex = 1;
             this.label8.Text = "功效主治";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -994,18 +1011,18 @@ namespace 中医信息管理系统
             this.txtGX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGX.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtGX.Location = new System.Drawing.Point(0, 0);
-            this.txtGX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtGX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGX.Multiline = true;
             this.txtGX.Name = "txtGX";
             this.txtGX.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtGX.Size = new System.Drawing.Size(179, 36);
+            this.txtGX.Size = new System.Drawing.Size(135, 36);
             this.txtGX.TabIndex = 1;
             // 
             // splitContainer12
             // 
             this.splitContainer12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer12.Location = new System.Drawing.Point(3, 42);
-            this.splitContainer12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer12.Location = new System.Drawing.Point(2, 42);
+            this.splitContainer12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer12.Name = "splitContainer12";
             // 
             // splitContainer12.Panel1
@@ -1015,8 +1032,9 @@ namespace 中医信息管理系统
             // splitContainer12.Panel2
             // 
             this.splitContainer12.Panel2.Controls.Add(this.txtYF);
-            this.splitContainer12.Size = new System.Drawing.Size(242, 36);
-            this.splitContainer12.SplitterDistance = 78;
+            this.splitContainer12.Size = new System.Drawing.Size(181, 36);
+            this.splitContainer12.SplitterDistance = 58;
+            this.splitContainer12.SplitterWidth = 3;
             this.splitContainer12.TabIndex = 8;
             // 
             // label7
@@ -1025,8 +1043,9 @@ namespace 中医信息管理系统
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 36);
+            this.label7.Size = new System.Drawing.Size(58, 36);
             this.label7.TabIndex = 1;
             this.label7.Text = "用法用量";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1036,18 +1055,18 @@ namespace 中医信息管理系统
             this.txtYF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtYF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtYF.Location = new System.Drawing.Point(0, 0);
-            this.txtYF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtYF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtYF.Multiline = true;
             this.txtYF.Name = "txtYF";
             this.txtYF.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtYF.Size = new System.Drawing.Size(160, 36);
+            this.txtYF.Size = new System.Drawing.Size(120, 36);
             this.txtYF.TabIndex = 1;
             // 
             // splitContainer11
             // 
             this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer11.Location = new System.Drawing.Point(792, 2);
-            this.splitContainer11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer11.Location = new System.Drawing.Point(592, 2);
+            this.splitContainer11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer11.Name = "splitContainer11";
             // 
             // splitContainer11.Panel1
@@ -1057,8 +1076,9 @@ namespace 中医信息管理系统
             // splitContainer11.Panel2
             // 
             this.splitContainer11.Panel2.Controls.Add(this.txtPZ);
-            this.splitContainer11.Size = new System.Drawing.Size(258, 36);
-            this.splitContainer11.SplitterDistance = 83;
+            this.splitContainer11.Size = new System.Drawing.Size(194, 36);
+            this.splitContainer11.SplitterDistance = 62;
+            this.splitContainer11.SplitterWidth = 3;
             this.splitContainer11.TabIndex = 7;
             // 
             // label6
@@ -1067,8 +1087,9 @@ namespace 中医信息管理系统
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 36);
+            this.label6.Size = new System.Drawing.Size(62, 36);
             this.label6.TabIndex = 1;
             this.label6.Text = "炮制";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1078,18 +1099,18 @@ namespace 中医信息管理系统
             this.txtPZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPZ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtPZ.Location = new System.Drawing.Point(0, 0);
-            this.txtPZ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPZ.Multiline = true;
             this.txtPZ.Name = "txtPZ";
             this.txtPZ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtPZ.Size = new System.Drawing.Size(171, 36);
+            this.txtPZ.Size = new System.Drawing.Size(129, 36);
             this.txtPZ.TabIndex = 1;
             // 
             // splitContainer10
             // 
             this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer10.Location = new System.Drawing.Point(529, 2);
-            this.splitContainer10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer10.Location = new System.Drawing.Point(395, 2);
+            this.splitContainer10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer10.Name = "splitContainer10";
             // 
             // splitContainer10.Panel1
@@ -1099,8 +1120,9 @@ namespace 中医信息管理系统
             // splitContainer10.Panel2
             // 
             this.splitContainer10.Panel2.Controls.Add(this.txtFJZC);
-            this.splitContainer10.Size = new System.Drawing.Size(257, 36);
-            this.splitContainer10.SplitterDistance = 82;
+            this.splitContainer10.Size = new System.Drawing.Size(193, 36);
+            this.splitContainer10.SplitterDistance = 61;
+            this.splitContainer10.SplitterWidth = 3;
             this.splitContainer10.TabIndex = 6;
             // 
             // label3
@@ -1109,8 +1131,9 @@ namespace 中医信息管理系统
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 36);
+            this.label3.Size = new System.Drawing.Size(61, 36);
             this.label3.TabIndex = 1;
             this.label3.Text = "方剂组成";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1120,18 +1143,18 @@ namespace 中医信息管理系统
             this.txtFJZC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFJZC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFJZC.Location = new System.Drawing.Point(0, 0);
-            this.txtFJZC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFJZC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFJZC.Multiline = true;
             this.txtFJZC.Name = "txtFJZC";
             this.txtFJZC.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtFJZC.Size = new System.Drawing.Size(171, 36);
+            this.txtFJZC.Size = new System.Drawing.Size(129, 36);
             this.txtFJZC.TabIndex = 1;
             // 
             // splitContainer8
             // 
             this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.Location = new System.Drawing.Point(3, 122);
-            this.splitContainer8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer8.Location = new System.Drawing.Point(2, 122);
+            this.splitContainer8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer8.Name = "splitContainer8";
             // 
             // splitContainer8.Panel1
@@ -1141,8 +1164,9 @@ namespace 中医信息管理系统
             // splitContainer8.Panel2
             // 
             this.splitContainer8.Panel2.Controls.Add(this.txtBZ);
-            this.splitContainer8.Size = new System.Drawing.Size(242, 36);
-            this.splitContainer8.SplitterDistance = 78;
+            this.splitContainer8.Size = new System.Drawing.Size(181, 36);
+            this.splitContainer8.SplitterDistance = 58;
+            this.splitContainer8.SplitterWidth = 3;
             this.splitContainer8.TabIndex = 4;
             // 
             // label5
@@ -1151,8 +1175,9 @@ namespace 中医信息管理系统
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 36);
+            this.label5.Size = new System.Drawing.Size(58, 36);
             this.label5.TabIndex = 0;
             this.label5.Text = "备注";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1162,18 +1187,18 @@ namespace 中医信息管理系统
             this.txtBZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBZ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBZ.Location = new System.Drawing.Point(0, 0);
-            this.txtBZ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBZ.Multiline = true;
             this.txtBZ.Name = "txtBZ";
             this.txtBZ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBZ.Size = new System.Drawing.Size(160, 36);
+            this.txtBZ.Size = new System.Drawing.Size(120, 36);
             this.txtBZ.TabIndex = 0;
             // 
             // splitContainer4
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.Location = new System.Drawing.Point(3, 2);
-            this.splitContainer4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer4.Location = new System.Drawing.Point(2, 2);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer4.Name = "splitContainer4";
             // 
             // splitContainer4.Panel1
@@ -1183,8 +1208,9 @@ namespace 中医信息管理系统
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.txtMC);
-            this.splitContainer4.Size = new System.Drawing.Size(242, 36);
-            this.splitContainer4.SplitterDistance = 78;
+            this.splitContainer4.Size = new System.Drawing.Size(181, 36);
+            this.splitContainer4.SplitterDistance = 58;
+            this.splitContainer4.SplitterWidth = 3;
             this.splitContainer4.TabIndex = 0;
             // 
             // label1
@@ -1193,8 +1219,9 @@ namespace 中医信息管理系统
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 36);
+            this.label1.Size = new System.Drawing.Size(58, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "名称";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1204,18 +1231,18 @@ namespace 中医信息管理系统
             this.txtMC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMC.Location = new System.Drawing.Point(0, 0);
-            this.txtMC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMC.Multiline = true;
             this.txtMC.Name = "txtMC";
             this.txtMC.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMC.Size = new System.Drawing.Size(160, 36);
+            this.txtMC.Size = new System.Drawing.Size(120, 36);
             this.txtMC.TabIndex = 0;
             // 
             // splitContainer9
             // 
             this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer9.Location = new System.Drawing.Point(251, 2);
-            this.splitContainer9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer9.Location = new System.Drawing.Point(187, 2);
+            this.splitContainer9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer9.Name = "splitContainer9";
             // 
             // splitContainer9.Panel1
@@ -1225,8 +1252,9 @@ namespace 中医信息管理系统
             // splitContainer9.Panel2
             // 
             this.splitContainer9.Panel2.Controls.Add(this.txtFG);
-            this.splitContainer9.Size = new System.Drawing.Size(272, 36);
-            this.splitContainer9.SplitterDistance = 89;
+            this.splitContainer9.Size = new System.Drawing.Size(204, 36);
+            this.splitContainer9.SplitterDistance = 66;
+            this.splitContainer9.SplitterWidth = 3;
             this.splitContainer9.TabIndex = 5;
             // 
             // label2
@@ -1235,8 +1263,9 @@ namespace 中医信息管理系统
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 36);
+            this.label2.Size = new System.Drawing.Size(66, 36);
             this.label2.TabIndex = 1;
             this.label2.Text = "方歌";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1246,21 +1275,21 @@ namespace 中医信息管理系统
             this.txtFG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFG.Location = new System.Drawing.Point(0, 0);
-            this.txtFG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFG.Multiline = true;
             this.txtFG.Name = "txtFG";
             this.txtFG.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtFG.Size = new System.Drawing.Size(179, 36);
+            this.txtFG.Size = new System.Drawing.Size(135, 36);
             this.txtFG.TabIndex = 1;
             // 
             // btnAdd
             // 
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdd.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnAdd.Location = new System.Drawing.Point(251, 122);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Location = new System.Drawing.Point(187, 122);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(272, 36);
+            this.btnAdd.Size = new System.Drawing.Size(204, 36);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "录入";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -1270,10 +1299,10 @@ namespace 中医信息管理系统
             // 
             this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.Location = new System.Drawing.Point(529, 122);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Location = new System.Drawing.Point(395, 122);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(257, 36);
+            this.btnUpdate.Size = new System.Drawing.Size(193, 36);
             this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "修改";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -1283,10 +1312,10 @@ namespace 中医信息管理系统
             // 
             this.btnMutiDel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMutiDel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnMutiDel.Location = new System.Drawing.Point(792, 122);
-            this.btnMutiDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMutiDel.Location = new System.Drawing.Point(592, 122);
+            this.btnMutiDel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMutiDel.Name = "btnMutiDel";
-            this.btnMutiDel.Size = new System.Drawing.Size(258, 36);
+            this.btnMutiDel.Size = new System.Drawing.Size(194, 36);
             this.btnMutiDel.TabIndex = 18;
             this.btnMutiDel.Text = "多行删除";
             this.btnMutiDel.UseVisualStyleBackColor = true;
@@ -1315,35 +1344,22 @@ namespace 中医信息管理系统
             this.dgvFangji.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvFangji.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvFangji.Location = new System.Drawing.Point(0, 0);
-            this.dgvFangji.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvFangji.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvFangji.Name = "dgvFangji";
+            this.dgvFangji.ReadOnly = true;
             this.dgvFangji.RowHeadersWidth = 50;
             this.dgvFangji.RowTemplate.Height = 27;
-            this.dgvFangji.Size = new System.Drawing.Size(1053, 361);
+            this.dgvFangji.Size = new System.Drawing.Size(788, 253);
             this.dgvFangji.TabIndex = 0;
             this.dgvFangji.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFangji_CellClick);
             this.dgvFangji.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFangji_CellMouseDown);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmDel});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 28);
-            // 
-            // tsmDel
-            // 
-            this.tsmDel.Name = "tsmDel";
-            this.tsmDel.Size = new System.Drawing.Size(108, 24);
-            this.tsmDel.Text = "删除";
-            this.tsmDel.Click += new System.EventHandler(this.tsmDel_Click);
             // 
             // colCheck
             // 
             this.colCheck.HeaderText = "选择";
             this.colCheck.MinimumWidth = 6;
             this.colCheck.Name = "colCheck";
+            this.colCheck.ReadOnly = true;
             // 
             // Column14
             // 
@@ -1351,6 +1367,7 @@ namespace 中医信息管理系统
             this.Column14.HeaderText = "编号";
             this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
             // 
             // Column9
             // 
@@ -1358,6 +1375,7 @@ namespace 中医信息管理系统
             this.Column9.HeaderText = "分类编号";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // Column1
             // 
@@ -1365,6 +1383,7 @@ namespace 中医信息管理系统
             this.Column1.HeaderText = "名称";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
@@ -1372,6 +1391,7 @@ namespace 中医信息管理系统
             this.Column2.HeaderText = "方歌";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
@@ -1379,6 +1399,7 @@ namespace 中医信息管理系统
             this.Column3.HeaderText = "方剂组成";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
@@ -1386,6 +1407,7 @@ namespace 中医信息管理系统
             this.Column4.HeaderText = "炮制";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
@@ -1393,6 +1415,7 @@ namespace 中医信息管理系统
             this.Column5.HeaderText = "用法用量";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
@@ -1400,6 +1423,7 @@ namespace 中医信息管理系统
             this.Column6.HeaderText = "功效主治";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
@@ -1407,6 +1431,7 @@ namespace 中医信息管理系统
             this.Column7.HeaderText = "方义分析";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
@@ -1414,6 +1439,7 @@ namespace 中医信息管理系统
             this.Column8.HeaderText = "加减方";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // Column10
             // 
@@ -1421,6 +1447,7 @@ namespace 中医信息管理系统
             this.Column10.HeaderText = "来源";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // Column11
             // 
@@ -1428,6 +1455,7 @@ namespace 中医信息管理系统
             this.Column11.HeaderText = "快速记忆";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // Column12
             // 
@@ -1435,6 +1463,7 @@ namespace 中医信息管理系统
             this.Column12.HeaderText = "注意事项";
             this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
             // 
             // Column13
             // 
@@ -1442,16 +1471,31 @@ namespace 中医信息管理系统
             this.Column13.HeaderText = "备注";
             this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmDel});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            // 
+            // tsmDel
+            // 
+            this.tsmDel.Name = "tsmDel";
+            this.tsmDel.Size = new System.Drawing.Size(100, 22);
+            this.tsmDel.Text = "删除";
+            this.tsmDel.Click += new System.EventHandler(this.tsmDel_Click);
             // 
             // FrmFangji
             // 
             this.AcceptButton = this.btnSearch;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmFangji";
             this.Text = "汤头方剂";
             this.Load += new System.EventHandler(this.FrmFangji_Load);

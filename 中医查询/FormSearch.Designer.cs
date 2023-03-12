@@ -33,28 +33,32 @@ namespace 中医信息管理系统
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.labTitle = new System.Windows.Forms.Label();
+            this.labTips = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cboSearch
             // 
+            this.cboSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboSearch.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cboSearch.FormattingEnabled = true;
             this.cboSearch.Items.AddRange(new object[] {
-            "疾病",
+            "症状",
             "中药",
             "汤方",
             "偏方",
             "医学家"});
-            this.cboSearch.Location = new System.Drawing.Point(264, 248);
+            this.cboSearch.Location = new System.Drawing.Point(269, 219);
             this.cboSearch.Name = "cboSearch";
             this.cboSearch.Size = new System.Drawing.Size(121, 33);
             this.cboSearch.TabIndex = 0;
+            this.cboSearch.SelectedIndexChanged += new System.EventHandler(this.cboSearch_SelectedIndexChanged);
             // 
             // txtSearch
             // 
+            this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtSearch.Location = new System.Drawing.Point(391, 248);
+            this.txtSearch.Location = new System.Drawing.Point(396, 219);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(438, 33);
@@ -62,10 +66,13 @@ namespace 中医信息管理系统
             // 
             // btnSearch
             // 
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSearch.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSearch.Location = new System.Drawing.Point(835, 248);
+            this.btnSearch.Location = new System.Drawing.Point(840, 219);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 33);
             this.btnSearch.TabIndex = 2;
@@ -75,19 +82,33 @@ namespace 中医信息管理系统
             // 
             // labTitle
             // 
+            this.labTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labTitle.AutoSize = true;
             this.labTitle.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labTitle.Location = new System.Drawing.Point(484, 131);
+            this.labTitle.Location = new System.Drawing.Point(497, 102);
             this.labTitle.Name = "labTitle";
             this.labTitle.Size = new System.Drawing.Size(190, 46);
             this.labTitle.TabIndex = 3;
             this.labTitle.Text = "中 医 查 询";
             // 
+            // labTips
+            // 
+            this.labTips.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labTips.AutoSize = true;
+            this.labTips.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labTips.Location = new System.Drawing.Point(363, 468);
+            this.labTips.Name = "labTips";
+            this.labTips.Size = new System.Drawing.Size(458, 21);
+            this.labTips.TabIndex = 4;
+            this.labTips.Text = "多关键词关联查询请使用中文逗号进行分隔（例如头痛，咳嗽）";
+            // 
             // FormSearch
             // 
+            this.AcceptButton = this.btnSearch;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 497);
+            this.Controls.Add(this.labTips);
             this.Controls.Add(this.labTitle);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
@@ -108,5 +129,6 @@ namespace 中医信息管理系统
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label labTitle;
+        private System.Windows.Forms.Label labTips;
     }
 }

@@ -296,11 +296,11 @@ namespace 中医信息管理系统
             this.cboClassification.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboClassification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboClassification.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cboClassification.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cboClassification.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cboClassification.FormattingEnabled = true;
             this.cboClassification.Location = new System.Drawing.Point(0, 0);
             this.cboClassification.Name = "cboClassification";
-            this.cboClassification.Size = new System.Drawing.Size(196, 27);
+            this.cboClassification.Size = new System.Drawing.Size(196, 30);
             this.cboClassification.TabIndex = 2;
             this.cboClassification.SelectedIndexChanged += new System.EventHandler(this.cboClassification_SelectedIndexChanged);
             // 
@@ -321,7 +321,7 @@ namespace 中医信息管理系统
             this.btnSelect.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelect.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSelect.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSelect.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnSelect.Location = new System.Drawing.Point(315, 0);
             this.btnSelect.Margin = new System.Windows.Forms.Padding(2);
@@ -341,7 +341,7 @@ namespace 中医信息管理系统
             this.founder,
             this.remark});
             this.livPeculiarPrescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.livPeculiarPrescription.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.livPeculiarPrescription.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.livPeculiarPrescription.FullRowSelect = true;
             this.livPeculiarPrescription.HideSelection = false;
             this.livPeculiarPrescription.Location = new System.Drawing.Point(0, 0);
@@ -632,7 +632,7 @@ namespace 中医信息管理系统
             // 
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.Location = new System.Drawing.Point(0, 0);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -677,7 +677,7 @@ namespace 中医信息管理系统
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -722,7 +722,7 @@ namespace 中医信息管理系统
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(0, 0);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -767,7 +767,7 @@ namespace 中医信息管理系统
             // 
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -812,7 +812,7 @@ namespace 中医信息管理系统
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -857,7 +857,7 @@ namespace 中医信息管理系统
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -902,7 +902,7 @@ namespace 中医信息管理系统
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -947,7 +947,7 @@ namespace 中医信息管理系统
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -992,7 +992,7 @@ namespace 中医信息管理系统
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -1037,7 +1037,7 @@ namespace 中医信息管理系统
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -1082,7 +1082,7 @@ namespace 中医信息管理系统
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("楷体", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -1126,7 +1126,7 @@ namespace 中医信息管理系统
             this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnUpdate.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnUpdate.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnUpdate.Location = new System.Drawing.Point(0, 0);
             this.btnUpdate.Name = "btnUpdate";
@@ -1141,7 +1141,7 @@ namespace 中医信息管理系统
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnAdd.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnAdd.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnAdd.Location = new System.Drawing.Point(0, 0);
             this.btnAdd.Name = "btnAdd";
@@ -1195,7 +1195,7 @@ namespace 中医信息管理系统
             this.btnAllSelect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAllSelect.FlatAppearance.BorderSize = 0;
             this.btnAllSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllSelect.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnAllSelect.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnAllSelect.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnAllSelect.Location = new System.Drawing.Point(0, 0);
             this.btnAllSelect.Name = "btnAllSelect";
@@ -1227,7 +1227,7 @@ namespace 中医信息管理系统
             this.btnNotAllSelect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNotAllSelect.FlatAppearance.BorderSize = 0;
             this.btnNotAllSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotAllSelect.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnNotAllSelect.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnNotAllSelect.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnNotAllSelect.Location = new System.Drawing.Point(0, 0);
             this.btnNotAllSelect.Name = "btnNotAllSelect";
@@ -1276,7 +1276,7 @@ namespace 中医信息管理系统
             this.btnPushExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPushExcel.FlatAppearance.BorderSize = 0;
             this.btnPushExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPushExcel.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPushExcel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPushExcel.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnPushExcel.Location = new System.Drawing.Point(0, 0);
             this.btnPushExcel.Name = "btnPushExcel";
@@ -1291,7 +1291,7 @@ namespace 中医信息管理系统
             this.btnPullExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPullExcel.FlatAppearance.BorderSize = 0;
             this.btnPullExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPullExcel.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPullExcel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPullExcel.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnPullExcel.Location = new System.Drawing.Point(0, 0);
             this.btnPullExcel.Name = "btnPullExcel";
@@ -1323,7 +1323,7 @@ namespace 中医信息管理系统
             this.btnMulDel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMulDel.FlatAppearance.BorderSize = 0;
             this.btnMulDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMulDel.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnMulDel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnMulDel.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnMulDel.Location = new System.Drawing.Point(0, 0);
             this.btnMulDel.Name = "btnMulDel";
@@ -1338,7 +1338,7 @@ namespace 中医信息管理系统
             this.btnMulAdd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMulAdd.FlatAppearance.BorderSize = 0;
             this.btnMulAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMulAdd.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnMulAdd.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnMulAdd.ForeColor = System.Drawing.Color.CadetBlue;
             this.btnMulAdd.Location = new System.Drawing.Point(0, 0);
             this.btnMulAdd.Name = "btnMulAdd";
@@ -1359,7 +1359,9 @@ namespace 中医信息管理系统
             this.dgvFolkPrescription.Location = new System.Drawing.Point(0, 0);
             this.dgvFolkPrescription.Margin = new System.Windows.Forms.Padding(2);
             this.dgvFolkPrescription.Name = "dgvFolkPrescription";
+            this.dgvFolkPrescription.ReadOnly = true;
             this.dgvFolkPrescription.RowHeadersWidth = 51;
+            this.dgvFolkPrescription.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgvFolkPrescription.RowTemplate.Height = 27;
             this.dgvFolkPrescription.Size = new System.Drawing.Size(537, 180);
             this.dgvFolkPrescription.TabIndex = 0;
@@ -1370,6 +1372,7 @@ namespace 中医信息管理系统
             this.colCheck.HeaderText = "选择";
             this.colCheck.MinimumWidth = 6;
             this.colCheck.Name = "colCheck";
+            this.colCheck.ReadOnly = true;
             // 
             // FrmPeculiarPrescription
             // 
